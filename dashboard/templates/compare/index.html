@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+         {{ form.as_p }}
+        <button type="submit">Upload File 1</button>
+        {{ form.as_p }}
+        <button type="submit">Upload File 2</button>
+      </form>
+      
+      {% if file_obj %}
+        <h3>Succesfully uploaded : {{file_obj.title}}</h3>
+        <p>{{ file_obj.file.url}}</p>
+      {% endif %}
+
+      <!-- <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+         
+      </form>
+      
+      {% if file_obj %}
+        <h3>Succesfully uploaded : {{file_obj.title}}</h3>
+        <p>{{ file_obj.file.url}}</p>
+      {% endif %} -->
+</body>
+</html>
