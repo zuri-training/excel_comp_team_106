@@ -67,6 +67,7 @@ li a {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
+
 }
 
 .nav-btn button {
@@ -77,12 +78,14 @@ li a {
     letter-spacing: 0.1px;
     border-radius: 5px;
     margin-right: 15px;
+    cursor:pointer;
 }
 
 .sign-in {
     background-color: #fff;
     color: #003DB1;
     border: 1px solid #003DB1;
+    
 }
 
 .sign-up {
@@ -117,7 +120,7 @@ li a {
                 </ul>
             </div>
             <div class="nav-btn">
-                <button class="sign-in">Sign In</button>
+                <a href= ../sign-in.html><button class="sign-in">Sign In</button></a>
                 <button class="sign-up">Sign Up</button>
             </div>
         </nav>
