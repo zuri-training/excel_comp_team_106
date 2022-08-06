@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 3235px;
+    background: #FFFFFF;
+
+}
+
+.header {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1440px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    /* XLSweep/Grey/500 */
+
+    border-bottom: 1px solid #B3B3B4;
+}
+
+.logo {
+    position: absolute;
+    height: 39px;
+    width: 167px;
+    left: 120px;
+    top: 25px;
+    border-radius: 0px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 60px;
+    position: absolute;
+    width: 365px;
+    height: 24px;
+    left: calc(50% - 365px/2 + 100px);
+    top: 28px;
+    list-style: none;
+}
+
+.menu a {
+
+    text-decoration: none;
+}
+
+.home {
+    width: 46px;
+    /* Home */
+
+
+    width: 46px;
+    height: 24px;
+
+    /* XLSweep/Header six */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* XLSweep/Primary */
+
+    color: #003DB1;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.about {
+    /* Home */
+
+
+    width: 46px;
+    height: 24px;
+
+    /* XLSweep/Header six */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* XLSweep/Primary */
+
+    color: #003DB1;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.faq {
+    /* Home */
+
+
+    width: 46px;
+    height: 24px;
+
+    /* XLSweep/Header six */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* XLSweep/Primary */
+
+    color: #003DB1;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.contact {
+    width: 46px;
+    height: 24px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* XLSweep/Primary */
+
+    color: #003DB1;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 250px;
+    height: 64px;
+    right: 120px;
+    top: 8px;
+}
+
+.usr-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+
+    width: 162px;
+    height: 40px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.user-name {
+    width: 130px;
+    height: 24px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #001847;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.user-email {
+    width: 162px;
+    height: 16px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    color: #67686A;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-top: -2px;
+    margin-right: -8px;
+}
+
+.user-details img {
+    width: 64px;
+    height: 64px;
+    background: url();
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    position: absolute;
+    width: 811px;
+    height: 296px;
+    left: 315px;
+    top: 188px;
+}
+
+.main1 {
+    width: 811px;
+    height: 84px;
+
+    /* XLSweep/Header one */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 84px;
+    /* identical to box height, or 131% */
+
+
+    /* XLSweep/Primary/900 */
+
+    color: #001847;
+}
+
+.online {
+    color: blue;
+}
+
+.main2 {
+    width: 790px;
+    height: 96px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #001847;
+}
+
+.before {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 590px;
+    height: 584px;
+    left: 120px;
+    top: 460px;
+}
+
+.bheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 160px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+svg.file {
+    width: 24px;
+    height: 24px;
+
+    fill: #000000;
+}
+
+.bookeep1 {
+    width: 124px;
+    height: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.fileframe {
+    box-sizing: border-box;
+
+    width: 590px;
+    height: 456px;
+
+    /* XLSweep/Primary/100 */
+
+    background: #EBF2FF;
+    /* XLSweep/Primary/300 */
+
+    border: 3px dashed #AAC2F1;
+    border-radius: 24px;
+}
+
+.cancel {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 514px;
+    /* top: 20px;/ */
+}
+
+.cancel svg {
+    position: absolute;
+    left: 28.16%;
+    right: 28.15%;
+    top: 28.15%;
+    bottom: 28.15%;
+}
+
+.outfra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 170px;
+    height: 190px;
+    left: -19rem;
+    top: 133px;
+}
+
+.infra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 170px;
+    height: 190px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.ininfra {
+    width: 150px;
+    height: 150px;
+
+    background: #FFFFFF;
+    border-radius: 200px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.ininfra img {
+    position: absolute;
+    left: 31%;
+    right: 26%;
+    top: 20%;
+    bottom: 23.33%;
+
+    /* XLSweep/Primary/300 */
+
+    fill: #AAC2F1;
+}
+
+.ininfra p {
+    width: 170px;
+    height: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    bottom: -1px;
+    /* XLSweep/Primary/900 */
+
+    color: #001847;
+
+    position: absolute;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.dropbef1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 308px;
+    height: 56px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+#drop-down {
+
+    box-sizing: border-box;
+
+    width: 308px;
+    height: 56px;
+
+    border: 1px solid #000000;
+    border-radius: 8px;
+    position: absolute;
+    left: 140px;
+    bottom: -1px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
