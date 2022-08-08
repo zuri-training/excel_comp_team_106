@@ -120,7 +120,7 @@ li a {
                 </ul>
             </div>
             <div class="nav-btn">
-                <a href= sign-in.html><button class="sign-in">Sign In</button></a>
+                <a href= "./sign-in.html"><button class="sign-in">Sign In</button></a>
                 <button class="sign-up">Sign Up</button>
             </div>
         </nav>
