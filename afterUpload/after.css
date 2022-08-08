@@ -280,6 +280,21 @@ body {
     color: blue;
 }
 
+.ininfra span {
+    width: 170px;
+    height: 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    bottom: -1px;
+    color: rgb(0, 24, 71);
+    position: absolute;
+    flex: 0 0 auto;
+    order: 1;
+}
+
 .main2 {
     width: 790px;
     height: 96px;
@@ -313,9 +328,8 @@ body {
     padding: 0px;
     gap: 12px;
 
-    width: 160px;
-    height: 24px;
 
+    margin-left: -70px;
 
     /* Inside auto layout */
 
@@ -334,13 +348,12 @@ svg.file {
 .bookeep1 {
     width: 124px;
     height: 24px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-
+    white-space: nowrap;
     color: #000000;
 }
 
@@ -432,7 +445,7 @@ svg.file {
 .ininfra p {
     width: 170px;
     height: 24px;
-
+    white-space: nowrap;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -440,7 +453,7 @@ svg.file {
     line-height: 24px;
     bottom: -1px;
     /* XLSweep/Primary/900 */
-
+    margin-left: -39px;
     color: #001847;
 
     position: absolute;
@@ -470,7 +483,6 @@ svg.file {
 }
 
 #drop-down {
-
     box-sizing: border-box;
 
     width: 308px;
@@ -486,4 +498,252 @@ svg.file {
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.after {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 590px;
+    height: 584px;
+    left: 730px;
+    top: 460px;
+
+    opacity: 0.6;
+}
+
+.below {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 1200px;
+    height: 115px;
+    left: 120px;
+    top: 1092px;
+}
+
+.beltext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 406px;
+    height: 59px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.beltext b {
+    width: 84px;
+    height: 32px;
+
+    /* XLSweep/Header five */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.005em;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+}
+
+.beltext p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+    white-space: nowrap;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.belcheck {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 1200px;
+    height: 32px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.chBal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 588px;
+    height: 32px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.chbal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 189px;
+    height: 32px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+svg.check {
+    position: absolute;
+    left: 0.751%;
+    /* right: 31.29%; */
+    top: 83%;
+    bottom: 38.21%;
+    cursor: pointer;
+}
+
+svg.check2 {
+    position: absolute;
+    right: 47.19%;
+    top: 83%;
+    bottom: 38.21%;
+    cursor: pointer;
+}
+
+svg.poly {
+    position: absolute;
+    bottom: 11.5%;
+    margin-left: -1px;
+    left: 19.8%;
+}
+
+svg.poly2 {
+    position: absolute;
+    bottom: 11.5%;
+    margin-left: 4px;
+    /* left: 19.8%; */
+}
+
+.blrp {
+    margin-top: 2px;
+}
+
+.chbal span {
+
+
+    /* XLSweep/Header five */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    margin-left: 40px;
+    letter-spacing: 0.005em;
+
+    /* XLSweep/Grey/800 */
+
+    color: #414244;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 3;
+}
+
+.chBal {
+
+
+    /* XLSweep/Header five */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.005em;
+
+    /* XLSweep/Grey/800 */
+
+    color: #414244;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+svg.chbox {
+    position: absolute;
+    left: 0.1%;
+    right: 8.34%;
+    top: 73.6%;
+    bottom: 8.33%;
+
+    opacity: 0.8;
+}
+
+svg.box {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 18%;
+    top: 91px;
 }
