@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -6,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>After Upload</title>
         <link rel="stylesheet" href="after.css" />
+        <script src="script.js/-"></script>
     </head>
 
     <body>
@@ -153,14 +155,11 @@
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <span>Blanks Cells</span>
-                        <div class="blrp"><svg width="16" class="box" height="16" viewBox="0 0 16 16" fill="none"
+                        <div class="blrp"><svg width="16" class="box" height="16" viewBox="0 0 16 16" fill="none" +
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect width="16" height="16" rx="4" fill="#AAC2F1" />
                             </svg>
-                            <svg width="8" class="poly" height="6" viewBox="0 0 8 6" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L0.535898 0H7.4641L4 6Z" fill="#000F2B" />
-                            </svg>
+
 
                         </div>
                     </div>
@@ -174,6 +173,7 @@
                     </svg>
                     <svg class="check2" width="14" height="10" viewBox="0 0 14 10" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
+                        +++++++++++++++++++++++++++++++++++++++
                         <path d="M1.33398 5.00002L5.10732 8.77335L12.6673 1.22668" stroke="#003DB1" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -182,14 +182,79 @@
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="16" height="16" rx="4" fill="#AAC2F1" />
                         </svg>
-                        <svg width="8" class="poly2" height="6" viewBox="0 0 8 6" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 6L0.535898 0H7.4641L4 6Z" fill="#000F2B" />
-                        </svg>
 
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="radiobel">
+            <div class="radiotext">
+                <b>
+                    Action
+                </b>
+                <p>Choose what to be carried out before the comparison </p>
+            </div>
+            <div class="radio">
+                <input type="radio" id="remove" name="fav_language" value="HTML">
+                <label id="idr" for="remove">Remove</label>
+                <input style="height:20px; width:20px;" type="radio" id="highlight" name="fav_language" value="CSS">
+                <label id="idh" for="highlight">Highlight</label>
+            </div>
+        </div>
+        <button class="pri"><span>Compare</span></button>
+
+        <div class="fileinfo">
+            <div class="how">
+                <div class="upload">
+                    <img src="upload.svg" alt="">
+                    <div class="uptext">
+                        <b>Upload</b>
+                        <p>Upload the two excel files to be compared seperately and select the required sheet</p>
+                    </div>
+                </div>
+                <div class="criteria">
+                    <img src="criteria.svg" alt="criteria">
+                    <div class="critext">
+                        <b>Criteria</b>
+                        <p>Select the neccesaary criteria, which conotes the nature of comparison you are about to take
+                        </p>
+                    </div>
+                </div>
+                <div class="click">
+                    <img src="click.svg" alt="click">
+                    <div class="clitext">
+
+                        <b>Click</b>
+                        <p>Click the “COMPARE” button below and get the action to perform</p>
+                    </div>
+                </div>
+                <div class="duration">
+                    <img src="duration.svg" alt="duration
+                    ">
+                    <div class="duratext">
+                        <b>Duration</b>
+                        <p>Files will be deleted from our servers after 24 HOURS and download links would stop working
+                        </p>
+                    </div>
+                </div>
+                <div class="maxfilesize">
+                    <img src="maxfile.svg" alt="maxfile">
+                    <div class="maxtext">
+                        <b>Maximum File Size</b>
+                        <p>Files should not be larger than 10MB</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="fileimg">
+                <img src="fileout.svg" alt="file">
+            </div>
+
+            <div class="rightHow">
+                <b>How it works</b>
+                <p>A step by step guide on how to use this software to perform your tasks</p>
+            </div>
+        </div>
     </body>
 
 </html>

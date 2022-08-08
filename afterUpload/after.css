@@ -24,8 +24,6 @@ body {
     top: 0px;
 
     background: #FFFFFF;
-    /* XLSweep/Grey/500 */
-
     border-bottom: 1px solid #B3B3B4;
 }
 
@@ -36,7 +34,6 @@ body {
     left: 120px;
     top: 25px;
     border-radius: 0px;
-
 }
 
 .menu {
@@ -55,93 +52,47 @@ body {
 }
 
 .menu a {
-
     text-decoration: none;
 }
 
 .home {
     width: 46px;
-    /* Home */
-
-
     width: 46px;
     height: 24px;
-
-    /* XLSweep/Header six */
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
-
-    /* XLSweep/Primary */
-
     color: #003DB1;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 
 .about {
-    /* Home */
-
-
     width: 46px;
     height: 24px;
-
-    /* XLSweep/Header six */
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
-
-    /* XLSweep/Primary */
-
     color: #003DB1;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
 .faq {
-    /* Home */
-
-
     width: 46px;
     height: 24px;
-
-    /* XLSweep/Header six */
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
-
-    /* XLSweep/Primary */
-
     color: #003DB1;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -155,16 +106,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
-
-    /* XLSweep/Primary */
-
     color: #003DB1;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -177,7 +119,6 @@ body {
     align-items: center;
     padding: 0px;
     gap: 24px;
-
     position: absolute;
     width: 250px;
     height: 64px;
@@ -191,13 +132,8 @@ body {
     justify-content: center;
     align-items: flex-end;
     padding: 0px;
-
     width: 162px;
     height: 40px;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -249,7 +185,6 @@ body {
     align-items: center;
     padding: 0px;
     gap: 12px;
-
     position: absolute;
     width: 811px;
     height: 296px;
@@ -260,19 +195,11 @@ body {
 .main1 {
     width: 811px;
     height: 84px;
-
-    /* XLSweep/Header one */
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
     line-height: 84px;
-    /* identical to box height, or 131% */
-
-
-    /* XLSweep/Primary/900 */
-
     color: #001847;
 }
 
@@ -313,7 +240,6 @@ body {
     align-items: center;
     padding: 0px;
     gap: 24px;
-
     position: absolute;
     width: 590px;
     height: 584px;
@@ -327,12 +253,7 @@ body {
     align-items: center;
     padding: 0px;
     gap: 12px;
-
-
     margin-left: -70px;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -341,7 +262,6 @@ body {
 svg.file {
     width: 24px;
     height: 24px;
-
     fill: #000000;
 }
 
@@ -359,15 +279,9 @@ svg.file {
 
 .fileframe {
     box-sizing: border-box;
-
     width: 590px;
     height: 456px;
-
-    /* XLSweep/Primary/100 */
-
     background: #EBF2FF;
-    /* XLSweep/Primary/300 */
-
     border: 3px dashed #AAC2F1;
     border-radius: 24px;
 }
@@ -377,7 +291,6 @@ svg.file {
     width: 56px;
     height: 56px;
     left: 514px;
-    /* top: 20px;/ */
 }
 
 .cancel svg {
@@ -394,7 +307,6 @@ svg.file {
     align-items: center;
     padding: 0px;
     gap: 16px;
-
     position: absolute;
     width: 170px;
     height: 190px;
@@ -408,7 +320,6 @@ svg.file {
     align-items: center;
     padding: 0px;
     gap: 16px;
-
     width: 170px;
     height: 190px;
     flex: none;
@@ -419,12 +330,8 @@ svg.file {
 .ininfra {
     width: 150px;
     height: 150px;
-
     background: #FFFFFF;
     border-radius: 200px;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -436,9 +343,6 @@ svg.file {
     right: 26%;
     top: 20%;
     bottom: 23.33%;
-
-    /* XLSweep/Primary/300 */
-
     fill: #AAC2F1;
 }
 
@@ -452,13 +356,9 @@ svg.file {
     font-size: 20px;
     line-height: 24px;
     bottom: -1px;
-    /* XLSweep/Primary/900 */
     margin-left: -39px;
     color: #001847;
-
     position: absolute;
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -470,13 +370,8 @@ svg.file {
     align-items: center;
     padding: 0px;
     gap: 24px;
-
     width: 308px;
     height: 56px;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -484,17 +379,13 @@ svg.file {
 
 #drop-down {
     box-sizing: border-box;
-
     width: 308px;
     height: 56px;
-
     border: 1px solid #000000;
     border-radius: 8px;
     position: absolute;
     left: 140px;
     bottom: -1px;
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -506,13 +397,11 @@ svg.file {
     align-items: center;
     padding: 0px;
     gap: 24px;
-
     position: absolute;
     width: 590px;
     height: 584px;
     left: 730px;
     top: 460px;
-
     opacity: 0.6;
 }
 
@@ -522,7 +411,6 @@ svg.file {
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-
     position: absolute;
     width: 1200px;
     height: 115px;
@@ -536,13 +424,8 @@ svg.file {
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-
     width: 406px;
     height: 59px;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -551,23 +434,13 @@ svg.file {
 .beltext b {
     width: 84px;
     height: 32px;
-
-    /* XLSweep/Header five */
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    /* identical to box height, or 133% */
-
     letter-spacing: 0.005em;
-
     color: #000000;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
 }
@@ -578,12 +451,8 @@ svg.file {
     font-weight: 200;
     font-size: 16px;
     line-height: 19px;
-
     color: #000000;
     white-space: nowrap;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -595,13 +464,8 @@ svg.file {
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-
     width: 1200px;
     height: 32px;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -613,13 +477,8 @@ svg.file {
     align-items: center;
     padding: 0px;
     gap: 24px;
-
     width: 588px;
     height: 32px;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 1;
@@ -631,13 +490,8 @@ svg.file {
     align-items: center;
     padding: 0px;
     gap: 16px;
-
     width: 189px;
     height: 32px;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -646,8 +500,7 @@ svg.file {
 svg.check {
     position: absolute;
     left: 0.751%;
-    /* right: 31.29%; */
-    top: 83%;
+    top: 82%;
     bottom: 38.21%;
     cursor: pointer;
 }
@@ -655,76 +508,38 @@ svg.check {
 svg.check2 {
     position: absolute;
     right: 47.19%;
-    top: 83%;
+    top: 82%;
     bottom: 38.21%;
     cursor: pointer;
 }
 
-svg.poly {
-    position: absolute;
-    bottom: 11.5%;
-    margin-left: -1px;
-    left: 19.8%;
-}
-
-svg.poly2 {
-    position: absolute;
-    bottom: 11.5%;
-    margin-left: 4px;
-    /* left: 19.8%; */
-}
 
 .blrp {
     margin-top: 2px;
 }
 
 .chbal span {
-
-
-    /* XLSweep/Header five */
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    /* identical to box height, or 133% */
     margin-left: 40px;
     letter-spacing: 0.005em;
-
-    /* XLSweep/Grey/800 */
-
     color: #414244;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 3;
 }
 
 .chBal {
-
-
-    /* XLSweep/Header five */
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    /* identical to box height, or 133% */
-
     letter-spacing: 0.005em;
-
-    /* XLSweep/Grey/800 */
-
     color: #414244;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -734,9 +549,8 @@ svg.chbox {
     position: absolute;
     left: 0.1%;
     right: 8.34%;
-    top: 73.6%;
+    top: 72.6%;
     bottom: 8.33%;
-
     opacity: 0.8;
 }
 
@@ -746,4 +560,419 @@ svg.box {
     height: 16px;
     left: 18%;
     top: 91px;
+}
+
+.radiobel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 1200px;
+    height: 120px;
+    left: 120px;
+    top: 1250px;
+}
+
+.radiotext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 1200px;
+    height: 64px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.radiotext b {
+    width: 74px;
+    height: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.005em;
+    color: #1B1C1F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.radiotext p {
+    width: 431px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C1F;
+    flex: none;
+    order: 1;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 102px;
+    width: 763px;
+    height: 32px;
+    flex: none;
+    order: 1;
+}
+
+label {
+    width: 94px;
+    height: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.005em;
+    color: #414244;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+label#idr {
+    position: absolute;
+    left: 4.5%;
+    top: 68%;
+}
+
+#remove {
+    width: 20px;
+    height: 20px;
+}
+
+#highlight {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 47%;
+    top: 71%;
+    background-color: rgb(255, 0, 0);
+}
+
+label#idh {
+    margin-top: -10px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 90px;
+    gap: 10px;
+    border: none;
+    position: absolute;
+    width: 232px;
+    height: 48px;
+    left: 604px;
+    top: 1528px;
+    background: #003DB2;
+    border-radius: 8px;
+}
+
+button span {
+    width: 70px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.fileinfo {
+    position: absolute;
+    width: 1440px;
+    height: 947px;
+    left: -2px;
+    top: 1660px;
+    background: #EBF2FF;
+    border-radius: 100px 0px;
+}
+
+.rightHow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 803px;
+    height: 120px;
+    left: 319px;
+    top: 80px;
+}
+
+.rightHow b {
+    width: 289px;
+    height: 64px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #00256B;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.rightHow p {
+    width: 803px;
+    height: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #00256B;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.fileimg {
+    position: absolute;
+    left: 7.92%;
+    right: 69.14%;
+    top: 35.48%;
+    bottom: 20.91%;
+}
+
+.how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    position: absolute;
+    width: 701px;
+    height: 559px;
+    left: 619px;
+    top: 390px;
+}
+
+.uptext {
+    position: absolute;
+    right: -9.5rem;
+    top: -5.7rem;
+}
+
+.critext {
+    position: absolute;
+    right: 5.59rem;
+    top: 3rem;
+}
+
+.clitext {
+    position: absolute;
+    right: 9.5rem;
+}
+
+.duratext {
+    position: absolute;
+    right: 9.5rem;
+}
+
+.maxtext {
+    position: absolute;
+    right: 9.5rem;
+}
+
+.upload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 701px;
+    height: 93px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.upload img {
+    position: absolute;
+    top: -4.2rem;
+}
+
+.criteria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 586px;
+    height: 93px;
+}
+
+.criteria img {
+    position: absolute;
+    top: 4.5rem;
+}
+
+.uptext b {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #001847;
+}
+
+.uptext p {
+    margin-top: 5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    width: 70%;
+    color: #001847;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.critext b {
+    width: 84px;
+    height: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #001847;
+}
+
+.critext p {
+    width: 526px;
+    height: 53px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 5.5px;
+    color: #001847;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.clitext b {
+    width: 57px;
+    height: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #001847;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.clitext p {
+    width: 510px;
+    height: 53px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #001847;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.duratext b {
+    width: 99px;
+    height: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #001847;
+}
+
+.duratext p {
+    width: 621px;
+    height: 48px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #001847;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.maxtext b {
+    width: 214px;
+    height: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #001847;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.maxtext p {
+    width: 338px;
+    height: 24px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #001847;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
