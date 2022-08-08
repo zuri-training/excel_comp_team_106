@@ -6,23 +6,14 @@
     box-sizing: border-box;
 }
 
-body {
-    position: relative;
-    width: 1440px;
-    height: 3235px;
-    background: #FFFFFF;
-
-}
 
 .header {
     box-sizing: border-box;
-
     position: absolute;
     width: 1440px;
     height: 80px;
     left: 0px;
     top: 0px;
-
     background: #FFFFFF;
     border-bottom: 1px solid #B3B3B4;
 }
@@ -36,6 +27,45 @@ body {
     border-radius: 0px;
 }
 
+.nav-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 60px;
+    position: absolute;
+    width: 365px;
+    height: 24px;
+    right: -2%;
+    top: 28px;
+    list-style: none;
+}
+
+.nav-btn button {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: #fff;
+    color: #003DB1;
+    border: 1px solid #003DB1;
+
+}
+
+.sign-up {
+    background-color: #003DB1;
+    color: #fff;
+    border: 1px solid #003DB1;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -46,7 +76,7 @@ body {
     position: absolute;
     width: 365px;
     height: 24px;
-    left: calc(50% - 365px/2 + 100px);
+    left: calc(50% - 365px/2 + 10px);
     top: 28px;
     list-style: none;
 }
@@ -669,7 +699,7 @@ label#idh {
     margin-top: -10px;
 }
 
-button {
+button.pri {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -703,9 +733,9 @@ button span {
 
 .fileinfo {
     position: absolute;
-    width: 1440px;
     height: 947px;
     left: -2px;
+    width: 1440px;
     top: 1660px;
     background: #EBF2FF;
     border-radius: 100px 0px;
@@ -779,7 +809,7 @@ button span {
 
 .uptext {
     position: absolute;
-    right: -9.5rem;
+    right: -2.4rem;
     top: -5.7rem;
 }
 
@@ -791,17 +821,21 @@ button span {
 
 .clitext {
     position: absolute;
-    right: 9.5rem;
+    right: 6.7rem;
+    top: 11rem;
 }
 
 .duratext {
     position: absolute;
-    right: 9.5rem;
+    right: -0.3rem;
+    top: 20rem
 }
 
 .maxtext {
     position: absolute;
-    right: 9.5rem;
+    right: 18rem;
+    top: 28rem;
+
 }
 
 .upload {
@@ -834,7 +868,7 @@ button span {
 
 .criteria img {
     position: absolute;
-    top: 4.5rem;
+    top: 4rem;
 }
 
 .uptext b {
@@ -890,6 +924,24 @@ button span {
     flex-grow: 0;
 }
 
+.click img {
+    position: absolute;
+    top: 12rem;
+}
+
+.click {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 1000px;
+    height: 93px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 .clitext b {
     width: 57px;
     height: 32px;
@@ -918,6 +970,25 @@ button span {
     flex: none;
     order: 1;
     flex-grow: 0;
+    margin-top: 4px;
+}
+
+.duration {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 1000px;
+    height: 93px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.duration img {
+    position: absolute;
+    top: 20.5rem;
 }
 
 .duratext b {
@@ -944,7 +1015,13 @@ button span {
     color: #001847;
     flex: none;
     order: 1;
+    margin-top: 4px;
     flex-grow: 0;
+}
+
+.maxfilesize img {
+    position: absolute;
+    top: 28.5rem;
 }
 
 .maxtext b {
@@ -973,6 +1050,7 @@ button span {
     line-height: 24px;
     color: #001847;
     flex: none;
+    margin-top: 4px;
     order: 1;
     flex-grow: 0;
 }
