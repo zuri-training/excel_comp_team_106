@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header img{
+    margin: 10px;
+    padding: auto;
+    width:  100px;
+} 
+
+main{
+    display: flex;
+}
+
+.filename{
+    padding: auto;
+}
+
+.filename p{
+    border: 2px solid black;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: powderblue;
+
+}
+
+.filename nav ul{
+    border: 2px solid black;
+    width: 350px;
+    height: 40px;
+    margin-left: 70px;
+    padding: 5px;
+    background-color: #67686A;
+}
+
+.filename nav ul img{
+    mix-blend-mode: multiply;
+}
+
+table, th, td{
+    border:  1px solid black;
+    border-collapse: collapse;
+    
+}
+
+table{
+    margin-left:70px;
+    margin-top: 3px;
+}
+
+td{
+    text-align: center;
+}
+
+.colored{
+    background-color: #67686A;
+}
+
+button{
+    border-radius: 3px;
+}
+
+.arrows{
+    border: 1px solid black;
+    width: 350px;
+    margin-left: 70px;
+    margin-top: 3px;
+    text-align: center;
+    padding: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.arrowss{
+    border: 1px solid black;
+    width: 350px;
+    margin-left: 70px;
+    margin-top: 1px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    left: 420px;
+    bottom: 33px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.summary{
+    display: flex;
+    padding: 5px;
+    margin: 0;
+}
+
+.summary h5{
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+}
+
+
+.summary p{
+    position: relative;
+    bottom: 30px;
+    left: 90px;
+}
+
+.summary ol{
+    position: relative;
+    right: 40px;
+}
+
+.summary ol li{
+    padding: 2px;
+}
+
+
+.savefile{
+    position: relative;
+    left: 500px;
+    bottom: 100px;
+}
+
+.btn{
+    position: relative;
+    left: 170px;
+    bottom: 40px;
+}
+
+.btn a{
+    text-decoration: none;
+    
+    
+}
+
+#btn1{
+    background-color: cyan;
+    margin: 0px;
+    width:150px ;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#btn1 a{
+    color: white;
+}
+#btn2 a{
+    color: blue;
+}
+
+#btn2{
+    border: 1px solid cyan;
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#btn3{
+    border: transparent;
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: white;
+}
+
+#btn3 a{
+    color: blue;
+}
+
