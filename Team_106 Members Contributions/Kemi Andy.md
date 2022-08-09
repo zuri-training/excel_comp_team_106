@@ -1,6 +1,6 @@
-##Kemi Andy
+## Kemi Andy
 
-###Contributions and Links
+### Contributions and Links
 
 + User Research Plan
   + [Research Plan](https://docs.google.com/document/d/1JA4gVAgW35vJIZaYAsPe3yZpvStiBLwKoWVMS5rYkgM/edit?usp=sharing)
