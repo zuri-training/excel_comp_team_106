@@ -12,20 +12,20 @@ html, body{
     margin: 0;
     padding: 0;
     max-width: 100%;
-    min-height: 100vh;
+     min-height: 100vh;
     max-height: 100vh;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+     // position: fixed;
+    //bottom: 0;
     width: 100%;
     background-color: #AAC2F2;
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    // padding: 2rem 1rem;
 }
 
 footer #xl-sweep-logo {
