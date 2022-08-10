@@ -11,27 +11,27 @@ User Research Plan <br>
 https://docs.google.com/document/d/1JA4gVAgW35vJIZaYAsPe3yZpvStiBLwKoWVMS5rYkgM/edit?usp=sharing
 
 Forgot Password screens and modal (Desktop) <br>
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1585%3A4803 (Forgot password)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1601%3A2712 (Verification)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1595%3A3071 (New password)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1595%3A3353 (Success modal)
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1585%3A4803 (Forgot password) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1601%3A2712 (Verification) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1595%3A3071 (New password) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1595%3A3353 (Success modal) <br>
 
 Result screen and Modals (Desktop) <br>
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1076%3A1083 (Result screen)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1079%3A360 (Download success modal)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1083%3A384 (Save success modal)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1083%3A392 (Share modal)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1585%3A4427 (result page loader)
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1076%3A1083 (Result screen) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1079%3A360 (Download success modal) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1083%3A384 (Save success modal) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1083%3A392 (Share modal) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1585%3A4427 (result page loader) <br>
 
 Profile page and saves items screen (Desktop) <br>
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=820%3A189 (page)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4858 (delete saved items confirmation modal)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4697 (delete success modal)
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=820%3A189 (page) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4858 (delete saved items confirmation modal) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4697 (delete success modal) <br>
 
 Forgot Password screens and modal (Mobile) <br>
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4899 (Forgot password) 
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4963 (Verification)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4931 (New password)
-https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1848%3A5462 (Success modal)
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4899 (Forgot password) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4963 (Verification) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1835%3A4931 (New password) <br>
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1848%3A5462 (Success modal) <br>
 
 Khemini Forced me to be her assistant.
