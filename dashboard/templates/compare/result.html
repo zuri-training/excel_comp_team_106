@@ -1,0 +1,21 @@
+<body>
+
+    <div class="box">
+        {{ compare }}
+        {{ compare2 }}
+    </div>
+      
+
+        {% for i in context %}
+        <h1>Title:{{i.title}}</h1>
+        <h1>DOWNLOAD THE FILE FROM HERE<a href="{{i.upload.url}}" download>{{i.title}}</a></h1>
+        {% endfor %}
+      <button type="submit" name="download" value="download">download</button>
+      {% if file_obj %}
+        <h3>Succesfully uploaded</h3>
+        <p>{{ context.media.url}}</p>
+      {% endif %}
+
+      
+</body>
+</html>
