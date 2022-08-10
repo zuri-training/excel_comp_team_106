@@ -79,3 +79,7 @@ https://www.figma.com/file/nWw40lzebQJ0QVNOs8g5Kx/Team106_ExelComp---USER-RESEAR
 
 
 15. I created the naming and folder  convention for the Text, Color, Grid and Effect styles (XLSweep)
+
+16. I created the component page below for easy and clean prototype on all the web pages
+
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1298%3A2334
