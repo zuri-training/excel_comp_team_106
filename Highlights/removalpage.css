@@ -7,10 +7,13 @@
 
 }
 
+body{
+    font-family: 'Poppins, sans-serif';
+}
+
 
 header img{
-    margin: 20px;
-    margin-left: 50px;
+    margin: 10px;
     padding: auto;
     width:  100px;
 } 
@@ -24,25 +27,32 @@ main{
 }
 
 .filename p{
-    border: 2px solid black;
+    border: 1px solid black;
     width: 350px;
     height: 40px;
-    text-align: center;
+    text-align: left;
     margin-left: 70px;
     margin-top: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: #AAC2F1;
+    background-color: powderblue;
 
 }
 
+.filename p img{
+    position: relative;
+    left: 180px;
+    top: 15px;
+    mix-blend-mode: multiply;
+}
+
 .filename nav ul{
-    border: 2px solid black;
+    border: 1px solid black;
     width: 350px;
     height: 40px;
     margin-left: 70px;
     padding: 5px;
-    background-color: #EEEEEE;
+    background-color: #67686A;
 }
 
 .filename nav ul img{
@@ -50,7 +60,7 @@ main{
 }
 
 table, th, td{
-    border:  1px solid grey;
+    border:  1px solid  grey;
     border-collapse: collapse;
     
 }
@@ -64,22 +74,8 @@ td{
     text-align: center;
 }
 
-td:nth-child(2){
-    background-color: #AAC2F1;
-    
-}
-
-td:nth-child(4){
-    background-color: #A1F1C6;
-}
-
-td:nth-child(6){
-    background-color: #AAC2F1;
-}
-
-
 .colored{
-    background-color: #C9C5CA;
+    background-color: #67686A;
 }
 
 button{
@@ -95,8 +91,6 @@ button{
     padding: 5px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    background-color: #F5F5F5;
-    
 }
 
 .arrowss{
@@ -111,13 +105,8 @@ button{
     bottom: 33px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    background-color: #F5F5F5;
 }
 
-
-.arrows img, .arrowss img{
-    mix-blend-mode: multiply;
-}
 .summary{
     display: flex;
     padding: 5px;
@@ -135,9 +124,6 @@ button{
     position: relative;
     bottom: 30px;
     left: 90px;
-    color: #D1D2D2;
-    font-weight: 600;
-
 }
 
 .summary ol{
@@ -149,52 +135,27 @@ button{
     padding: 2px;
 }
 
-#blank{
-    color: #AAF1C6;
-    font-weight: 600;
-}
-
-#diff{
-    color: #AAC2F1;
-    font-weight: 600;
-    
-}
-
-#duplicate{
-    color: #B3261E;
-    font-weight: 600;
-    
-}
-
-span{
-    color: black;
-    font-weight: 700;
-}
-
 
 .savefile{
     position: relative;
     left: 500px;
-    bottom: 100px;
+    bottom: 80px;
 }
 
 .btn{
     position: relative;
     left: 170px;
-    bottom: 40px;
+    bottom: 35px;
 }
 
 .btn a{
     text-decoration: none;
     
-}
-
-.btn:hover{
-    color: azure;
+    
 }
 
 #btn1{
-    background-color: #003DB2;
+    background-color: cyan;
     margin: 0px;
     width:150px ;
     height: 40px;
@@ -204,14 +165,12 @@ span{
 #btn1 a{
     color: white;
 }
-
-
 #btn2 a{
     color: blue;
 }
 
 #btn2{
-    border: 1px solid #003DB2;
+    border: 1px solid cyan;
     width: 150px;
     height: 40px;
     margin-top: 15px;
@@ -230,4 +189,3 @@ span{
 #btn3 a{
     color: blue;
 }
-
