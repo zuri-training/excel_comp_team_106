@@ -24,7 +24,7 @@ main{
 }
 
 .filename p{
-    border: 2px solid black;
+    border: 1px solid black;
     width: 350px;
     height: 40px;
     text-align: center;
@@ -37,7 +37,7 @@ main{
 }
 
 .filename nav ul{
-    border: 2px solid black;
+    border: 1px solid black;
     width: 350px;
     height: 40px;
     margin-left: 70px;
@@ -189,9 +189,6 @@ span{
     
 }
 
-.btn:hover{
-    color: azure;
-}
 
 #btn1{
     background-color: #003DB2;

@@ -35,7 +35,7 @@ main{
     margin-top: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: powderblue;
+    background-color: #AAC2F1;
 
 }
 
@@ -52,7 +52,7 @@ main{
     height: 40px;
     margin-left: 70px;
     padding: 5px;
-    background-color: #67686A;
+    background-color: #EEEEEE;
 }
 
 .filename nav ul img{
@@ -75,7 +75,7 @@ td{
 }
 
 .colored{
-    background-color: #67686A;
+    background-color: #C9C5CA;
 }
 
 button{
@@ -91,6 +91,7 @@ button{
     padding: 5px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    background-color: #F5F5F5;
 }
 
 .arrowss{
@@ -105,6 +106,11 @@ button{
     bottom: 33px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    background-color: #F5F5F5;
+}
+
+.arrows img, .arrowss img{
+    mix-blend-mode: multiply;
 }
 
 .summary{
@@ -124,6 +130,8 @@ button{
     position: relative;
     bottom: 30px;
     left: 90px;
+    color: #D1D2D2;
+    font-weight: 600;
 }
 
 .summary ol{
@@ -133,6 +141,22 @@ button{
 
 .summary ol li{
     padding: 2px;
+}
+
+#blank{
+    color: #AAF1C6;
+    font-weight: 600;
+}
+
+#duplicate{
+    color: #B3261E;
+    font-weight: 600;
+    
+}
+
+span{
+    color: black;
+    font-weight: 700;
 }
 
 
@@ -155,7 +179,7 @@ button{
 }
 
 #btn1{
-    background-color: cyan;
+    background-color: #003DB2;
     margin: 0px;
     width:150px ;
     height: 40px;
@@ -170,7 +194,7 @@ button{
 }
 
 #btn2{
-    border: 1px solid cyan;
+    border: 1px solid #003DB2;
     width: 150px;
     height: 40px;
     margin-top: 15px;
