@@ -12,8 +12,10 @@
 + Documentation Creation <br>
   + [Documentation Creation](https://docs.google.com/document/d/1tOntlt8o10BJrXbkUn5m31PZ7VYWP0BO/edit?usp=sharing&ouid=106029615177117760389&rtpof=true&sd=true)
 
-+ Design Presentation Slides Content <br>
++ Presentation Slides Content <br>
   + [Documentation Creation](https://docs.google.com/presentation/d/1ZMtzfNvyksAElQEtZJ1PTd5220e2FQLc7JfhkrM8iyA/edit?usp=sharing)
+
++ Proposal of Product Name and design logo ideas for the Platform
 
 + Design of FAQ Page Hifi (Desktop) <br>
   + [Documentation Creation](https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1418%3A3794)
