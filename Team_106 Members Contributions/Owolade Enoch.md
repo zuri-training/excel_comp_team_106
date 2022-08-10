@@ -33,8 +33,5 @@
 [Second file uploading at 50% - mobile](https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1522%3A5347) <br>
 [Second file uploading at 75% - mobile](https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1522%3A5517) <br>
 [Second file uploading at 100% - mobile](https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1522%3A5687) <br>
-
--Files upload screen (after two files are added for mobile) <br>
 [Second file uploaded/ After upload screen - mobile ](https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1634%3A5127) <br>
 
-- Design of files upload screen (before files are added for desktop)
