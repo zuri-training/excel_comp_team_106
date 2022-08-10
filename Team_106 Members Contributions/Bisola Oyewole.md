@@ -1,6 +1,6 @@
-Oyewole Bisola
+## Oyewole Bisola
 
-Contribution and Links
+### See below my Contribution and Links
 
 Designed the low-fi mobile Landing page <br>
 https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1021%3A872
