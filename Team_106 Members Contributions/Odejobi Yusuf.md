@@ -15,13 +15,15 @@ https://www.figma.com/proto/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DES
 
 https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1059%3A303
 
-4. On the web Sign up and Sign in page:I worked on the input fields, used auto layout, chose the font size for heading and place holder, and also wrote the micro copy.
+4. On the web Sign up and Sign in page:
+
++ I did the final changes, worked on the input fields, used auto layout where necessary, chose the font size for heading and place holder, and also wrote the micro copy.
 
 https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1595%3A2791
 
 https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1330%3A2021
 
-5. On the web page, i created the "After upload second file2 if the user deletes the first file"
+5. On the web page, i created the "After upload second file 2 if the user deletes the first file"
 
 https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1288%3A1546
 
