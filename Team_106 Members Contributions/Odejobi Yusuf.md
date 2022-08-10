@@ -1,5 +1,5 @@
 ### MY CONTRIBUTIONS, TASKED ASSIGNED, ISSUES RESOLVED, SOLUTIONS, LINKS
-1. I was tasked as the lead designer to check, make general changes and corrections where necessary on all the web and mobile screen (used auto layout where necessary, adjusted the spacing to 8px, all designs conform with the design system etc.)
+1. I was tasked as the lead designer to prototype, check, make general changes and corrections where necessary on all the web and mobile screen (used auto layout where necessary, adjusted the spacing to 8px, all designs conform with the design system etc.) This gives the user a seamless experience while using the web and mobile pages.
 
 2. I did the entire prototype that linked all the screens (Landing page, Upload pages, After upload page, Result pages, Profile, FAQ, Contact, Signup, Sign in, Terms & Conditions, Privacy, Error page and About pages) on the web and mobile pages.
 
@@ -25,13 +25,15 @@ https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESI
 
 https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1288%3A1546
 
-6. I created the "Select sheet" component and interaction used in the After upload" web page
+6. I created the "Select sheet" component and interaction used in the After upload" web page. This gives the user the option to choose a sheet under the uploaded file.
 
 https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1084%3A1123
 
-7. I worked with David (second lead designer) to create the " Result page"
+7. I worked with David (second lead designer) to create the final "Result page" for web and lo_fi page
 
 https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1076%3A2527
+
+https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=647%3A61
 
 8. I made the final corrections and changes on the "Profile page & save" web page
 
