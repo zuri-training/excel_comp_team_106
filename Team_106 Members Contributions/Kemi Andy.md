@@ -9,6 +9,9 @@
 + User Research <br>
   + [User Research](https://www.figma.com/file/nWw40lzebQJ0QVNOs8g5Kx/Team106_ExelComp---USER-RESEARCH?node-id=0%3A1)
 
++ Assigning of tasks to Designers <br>
+  + [Designers Tasks](https://docs.google.com/document/d/12xDaEtQ29mWGYGsf7Jsy6sPO1HR_dWk-rKuywFCcRSY/edit?usp=sharing)
+
 + Documentation Creation <br>
   + [Documentation Creation](https://docs.google.com/document/d/1tOntlt8o10BJrXbkUn5m31PZ7VYWP0BO/edit?usp=sharing&ouid=106029615177117760389&rtpof=true&sd=true)
 
@@ -26,8 +29,5 @@
 + Sign in and Sign up pages Hifi (Mobile) <br>
   + [Sign Up](https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1418%3A3233)
   + [Sign In](https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1385%3A2946)
-
-+ Assigning of tasks to Designers <br>
-  + [Designers Tasks](https://docs.google.com/document/d/12xDaEtQ29mWGYGsf7Jsy6sPO1HR_dWk-rKuywFCcRSY/edit?usp=sharing)
 
 + General Review and Correction of all designed pages
