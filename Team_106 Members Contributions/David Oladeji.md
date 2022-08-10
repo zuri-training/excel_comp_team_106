@@ -39,5 +39,3 @@
     - [Mobile View](https://www.figma.com/proto/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1471%3A2228&scaling=scale-down&page-id=512%3A2&starting-point-node-id=1471%3A2228&show-proto-sidebar=1) <br>
 
 
-
-### Thanks for viewing!
