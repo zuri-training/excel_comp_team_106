@@ -1,1 +1,23 @@
+# Gideon, Marvellous Adaora
 
+# Product Design Track
+
+# Team_106
+
+# My contributions and links
+
+I REPRESENTED THE TEAM  FOR OUR FISRT VIDEO RECORDING PRESENTATION: 
+https://www.awesomescreenshot.com/video/10248036?key=7de994b0b346c3aa3d088a8ed09954af
+
+ I DESIGNED AND SUGGESTED A LOGO FOR OUR PRODUCT
+ 
+ I DESIGNED THE HI-FI UNAUTENTICATED LANDING PAGE(DESKTOP):
+ https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1059%3A303
+ 
+ I DESIGNED THE HI-FI AUTENTICATED LANDING PAGE(DESKTOP):
+ https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=1226%3A1240
+ 
+ I SENT OUT SURVEY QUESTIONAIRE TO POTENTIAL USERS OF OUR PRODUCT:
+ https://docs.google.com/forms/d/e/1FAIpQLScazgVK-EyYStcTt5oeGL1JAn-jrirypThZdSFKB5og9B0Hyg/viewform?usp=pp_url
+ 
+GENERALLY, I MADE CORRECTIONS WHERE RELEVANT

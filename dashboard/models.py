@@ -1,8 +1,8 @@
 from django.db import models
 
 class File(models.Model):
-    title = models.CharField(max_length=200)
-    file = models.FileField(upload_to='files/%Y/%m/%d/')
+    file1 = models.FileField(upload_to='media')
+    file2 = models.FileField(upload_to='media')
 
     def __str__(self):
-        return self.title
+        return '{} and {}'.format(self.file1,self.file2)
