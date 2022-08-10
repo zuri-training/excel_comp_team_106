@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XL sweep</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<!-- css -->
+
+<style>
+
+* {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        background-color: #fafafa;
+        color: #001847;
+       
+        
+      
+    }
+
+
+    #navbar {
+        background-color: #fff;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 3rem;
+    }
+
+    #xl-sweep-logo {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+
+    #xl-logo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+    }
+
+    .green-logo {
+        position:absolute;
+        top: -35%;
+        left: -6%;
+    }
+
+    .logo {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .sweep {
+        font-size: 20px;
+        font-weight: 800;
+        color: #003DB1;
+        line-height: 23px;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    li a {
+        margin-right: 20px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .nav-btn button {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        border-radius: 5px;
+        margin-right: 15px;
+    }
+
+    .sign-in {
+        background-color: #fff;
+        color: #003DB1;
+        border: 1px solid #003DB1;
+    }
+
+    .sign-up {
+        background-color: #003DB1;
+        color: #fff;
+        border: 1px solid #003DB1;
+    }
+
+    header {
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-bottom: 1px solid #B3B3B4;
+
+
+    }
+
+    .contact-heading{
+
+        font-family: 'Raleway', sans-serif; 
+        text-align: center; 
+        font-weight: 600; 
+        font-size: 48px; 
+        line-height:64px; 
+        color: #001847; 
+        margin-bottom: 40px;
+
+    }
+
+    .mini-heading{
+
+        font-family: 'Space Grotesk', sans-serif; 
+        font-size: 24px; 
+        font-weight: 400; 
+        line-height: 36px; 
+        color: #00256B;
+
+    }
+
+
+    footer{
+background-color: #aac2f1;
+padding: 50px;
+    }
+
+hr{
+    width: 97%;
+    margin: auto;
+    border: 1px solid #00256B;
+}
+
+
+.footer-top{
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 50px;
+        line-height: 24px;
+        margin-bottom: 50px;
+        color: #001847;
+    }
+
+
+    .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #001847;
+    line-height: 18px;
+    padding: 2rem 0.8rem;
+}
+.footer-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.footer-bottom li a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #001847;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.sweep {
+    font-size: 20px;
+    font-weight: 800;
+    color: #003DB1;
+    line-height: 23px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+    .container{
+        min-height: 100%;
+        margin-top: 88px;
+    }
+
+
+    .main{
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+
+    .top-figcaption{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1B1C1F;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bottom-figcaption{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.phone{
+    border: none;
+    margin-left: 9%;
+    padding: 8px;
+    width: 295px;
+    height: 207px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.5), -2px -0px 10px -4px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-left: 100px; 
+    margin-top: 35px;
+   
+}
+
+.phone-img{
+    width: 60px;
+    height: 60px;
+    margin-left: 110px;
+margin-top: 30px;
+display: block;
+
+
+}
+
+
+.computer{
+    border:none;
+    margin-left: 8%;
+    padding: 5px;
+    width: 295px;
+    height: 214px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 12px -4px rgba(0, 0, 0, 0.5),  -2px -0px 10px -4px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-left: 100px; 
+    margin-top: 33px;
+}
+
+.comp-img{
+
+    width: 60px;
+    height: 60px;
+margin-left: 110px;
+margin-top: 30px;
+display: block;
+
+
+}
+
+.chat{
+    border: none;
+    margin-left: 8%;
+    padding: 8px;
+    width: 295px;
+    height: 204px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 12px -4px rgba(0, 0, 0, 0.5),  -2px -0px 10px -4px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-left: 100px; 
+    margin-top: 35px;
+}
+
+.chat-img{
+    width:60px;
+     height: 60px;
+     margin-left: 110px;
+    margin-top: 30px;
+    display: block;
+}
+
+
+
+.contact-info{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.terms{
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+    body{
+       overflow-x: hidden;
+       margin: 0;
+       padding: 0;
+    }
+
+    #navbar{
+
+width: 428px;
+
+    }
+
+    
+header{
+
+width: 428px;
+height: 24px;
+border-bottom: 1px solid #B3B3B4;
+
+}
+
+    
+.nav-links{
+    display: none;
+}
+
+.nav-btn{
+
+    display: none;
+}
+
+.contact-info{
+    display: block;
+    
+    
+}
+
+.phone{
+    width: 220px;
+}
+
+.phone-img{
+    margin-left: 81px;
+}
+
+.computer{
+
+width: 220px;
+
+}
+
+.comp-img{
+    margin-left: 81px;
+}
+
+.chat{
+
+width: 220px;
+
+}
+
+
+.chat-img{
+
+margin-left: 81px;
+
+}
+
+.contact-heading{
+
+font-size: 24px;
+line-height: 32px;
+font-weight: 600;
+text-align: center;
+margin-bottom: 0px;
+margin-top: 80px;
+margin-left: 53px;
+
+}
+
+
+.mini-heading{
+
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+text-align: center;
+margin-bottom: 0px;
+margin-left: 7px;
+
+
+}
+
+footer{
+    position: relative;
+  padding: 0px;
+    width: 428px;
+}
+
+.footer-top{
+    display: none;
+}
+
+hr{
+    display: none;
+}
+
+
+.footer-logo{
+    display: none;
+}
+
+.footer-xl-sweep{
+    display: none;
+    font-size: 16px;
+}
+.footer-bottom{
+
+position: relative; 
+font-size: 10px;
+margin-bottom: 0;
+    right: 229px;
+
+}
+
+.footer-bottom li a{
+    position: relative;
+left: 393px;
+font-size: 10px;
+
+
+
+}
+
+.term{
+
+display: none;
+
+}
+
+
+.sweep{
+
+font-size: 16px;
+line-height: 24px;
+font-weight: 800;
+
+}
+
+
+.logo{
+
+margin-left: 50px;
+
+}
+
+
+
+
+}
+
+
+</style>
+
+<body>
+
+
+    <header>
+        <nav id="navbar">
+            <div id="xl-sweep-logo">
+                <div id="xl-logo">
+                    <div class="green-logo">
+                        <img class="logo" src="picss/Vector.png" class="vectorgreen" alt="">
+                    </div>
+                    <div class="blue-logo">
+                        <img class="logo" src="picss/Vector-1.png" class="vectorblue" alt="">
+                    </div>
+                </div>
+                <div class="sweep">
+                    <h2>XL SWEEP</h2>
+                </div>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div class="container">
+
+            <div class="contact-heading">
+                <p>Contact Us</p>
+                <p class="mini-heading">Get in touch with us</p>
+            </div><br><br><br>
+
+            <div class="main">
+
+                <div class="contact-info">
+
+                <div class="phone">
+                    <figure>
+                    <img src="picss/phone.png" alt="phone" class="phone-img">
+                    <figcaption class="top-figcaption">+234 456 789 0123</figcaption>
+                    <figcaption class="bottom-figcaption">Get response immediately</figcaption>
+                
+                </figure>
+
+                </div>
+
+                <div class="computer">
+                    <figure>
+                    <img src="picss/tab.png" alt="computer"  class="comp-img">
+                    <figcaption class="top-figcaption">info@xlsweep.io</figcaption>
+                    <figcaption class="bottom-figcaption">Get response immediately</figcaption>
+                </figure>
+                </div>
+
+                <div class="chat">
+                    <figure>
+                    <img src="picss/2chat.png" alt="chat" class="chat-img">
+                    <figcaption class="top-figcaption">+234 456 789 0123</figcaption>
+                    <figcaption class="bottom-figcaption">Get response immediately</figcaption>
+                </figure>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <div id="xl-sweep-logo">
+            <div id="xl-logo">
+                <div class="footer-logo">
+                <div class="green-logo">
+                    <img class="logo" src="picss/Vector.png"     class="vectorgreen" alt="xl-logo">
+                </div>
+                <div class="blue-logo">
+                    <img class="logo" src="picss/Vector-1.png"  class="vectorblue" alt="xl-logo">
+                </div>
+            </div>
+            </div>
+            <div class="sweep">
+                <div class="footer-xl-sweep">
+                <h2>XL SWEEP</h2>
+            </div>
+            </div>
+        </div>
+    
+        <div class="footer-top">
+            <ul>
+                <li><a href="./index.html" class="index">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="footer-bottom">
+            <ul class="term">
+                <li><a href="./terms.html">Terms & Conditions |</a></li>
+                <li><a href="./privacy.html">Privacy Policy &nbsp;|</a></li>
+            </ul>
+            <p>XL Sweep 2022. All rights reserved.</p>
+        </div>
+     
+    </footer>
+
+    
+</body>
+</html>
