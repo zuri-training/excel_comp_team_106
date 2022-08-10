@@ -7,7 +7,7 @@
   + [Research Plan](https://docs.google.com/document/d/1JA4gVAgW35vJIZaYAsPe3yZpvStiBLwKoWVMS5rYkgM/edit?usp=sharing)
 
 + User Research <br>
-  + [+ User Research](https://www.figma.com/file/nWw40lzebQJ0QVNOs8g5Kx/Team106_ExelComp---USER-RESEARCH?node-id=0%3A1)
+  + [User Research](https://www.figma.com/file/nWw40lzebQJ0QVNOs8g5Kx/Team106_ExelComp---USER-RESEARCH?node-id=0%3A1)
 
 + Documentation Creation <br>
   + [Documentation Creation](https://docs.google.com/document/d/1tOntlt8o10BJrXbkUn5m31PZ7VYWP0BO/edit?usp=sharing&ouid=106029615177117760389&rtpof=true&sd=true)
