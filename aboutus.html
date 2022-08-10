@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XL sweep</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+
+
+</head>
+
+<!-- css -->
+
+
+<style>
+
+
+* {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        background-color: #fafafa;
+        color: #001847;
+        
+      
+    }
+
+
+    #navbar {
+        background-color: #fff;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 3rem;
+    }
+
+    #xl-sweep-logo {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+
+    #xl-logo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+    }
+
+    .green-logo {
+        position: absolute;
+        top: -35%;
+        left: -6%;
+    }
+
+    .logo {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .sweep {
+        font-size: 20px;
+        font-weight: 800;
+        color: #003DB1;
+        line-height: 23px;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    li a {
+        margin-right: 20px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .nav-btn button {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        border-radius: 5px;
+        margin-right: 15px;
+    }
+
+    .sign-in {
+        background-color: #fff;
+        color: #003DB1;
+        border: 1px solid #003DB1;
+    }
+
+    .sign-up {
+        background-color: #003DB1;
+        color: #fff;
+        border: 1px solid #003DB1;
+    }
+
+    header {
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-bottom: 1px solid #B3B3B4;
+
+
+    }
+
+    .about-heading{
+
+        font-family: 'Raleway', sans-serif; 
+        text-align: center; 
+        font-size: 30px; 
+        font-weight: 600; 
+        line-height: 68px; 
+        padding-bottom: 50px;
+
+    }
+
+    .about-back{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600; 
+        font-size: 24px; 
+        line-height: 32px; 
+        padding-bottom: 30px; 
+    }
+
+    .about-info{
+
+        font-family: 'Space Grotesk', sans-serif; 
+        font-size: 24px; 
+        font-weight: 400; 
+        line-height: 36px; 
+
+    }
+
+
+    footer{
+background-color: #aac2f1;
+padding: 70px  90px 50px 90px;
+    }
+
+hr{
+    width: 97%;
+    margin: auto;
+    border: 1px solid #00256B;
+}
+
+
+    .container{
+        min-height: 100%;
+        margin-top: 88px;
+        padding: 90px;
+    }
+
+
+    .main{
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+
+
+    .footer-top{
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 50px;
+        line-height: 24px;
+        margin-bottom: 90px;
+        color: #001847;
+    }
+
+
+    .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    font-size: 12px;
+    color: #001847;
+    line-height: 18px;
+    padding: 2rem 0.8rem;
+}
+.footer-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.footer-bottom li a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #001847;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.sweep {
+    font-size: 20px;
+    font-weight: 800;
+    color: #003DB1;
+    line-height: 23px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+
+@media all and (max-width: 700px){
+
+    .green-logo{
+
+top: -20%;
+left: -25%;
+
+}
+
+#xl-sweep-logo{
+display: flex;
+flex-direction: row;
+margin-right: 60px;
+margin-top: 50px;
+
+
+}
+
+
+#navbar{
+
+width: 428px;
+
+}
+
+
+.nav-links{
+display: none;
+}
+
+.nav-btn{
+display: none;
+}
+
+.footer-top{
+display: none;
+}
+
+hr{
+display: none;
+}
+
+
+.footer-logo{
+display: none;
+}
+
+.footer-xl-sweep{
+display: none;
+}
+
+.about-heading{
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.about-back{
+
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+
+}
+
+.about-info{
+
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    width: 428px;
+  
+
+}
+
+.footer-top{
+    display: none;
+}
+
+hr{
+    display: none;
+}
+
+.footer-logo{
+    display: none;
+}
+
+.footer-xl-sweep{
+    display: none;
+}
+
+
+
+
+.main{
+    overflow: hidden;
+    overflow-x: hidden;
+    padding-bottom: none;
+    margin-top: none;
+    margin-left: 5px;
+    
+}
+
+footer{
+    position: relative;
+    height: 80px;
+    width: 428px;
+    padding: 50px;
+    top: 147px;
+    
+}
+
+
+
+.container{
+    margin-top: none;
+}
+
+
+.terms{
+    display: none;
+}
+
+.rights{
+    font-size: 10px;
+    display: flex;
+    margin-bottom: 0;
+    position: relative;
+    right: 278px;
+    bottom: 56px;
+  
+}
+
+
+
+.footer-logo{
+
+display: none;
+
+}
+
+#xlsweep-bottom{
+    display: none;
+}
+
+.footer-bottom li a{
+
+font-size: 10px;
+position: relative;
+left: 117px;
+bottom: 58px;
+}
+
+
+
+
+
+}
+
+
+</style>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="xl-sweep-logo">
+                <div id="xl-logo">
+                    <div class="green-logo">
+                        <img class="logo" src="picss/Vector.png" class="vectorgreen" alt="">
+                    </div>
+                    <div class="blue-logo">
+                        <img class="logo" src="picss/Vector-1.png" class="vectorblue" alt="">
+                    </div>
+                </div>
+                <div class="sweep">
+                    <h2>XL SWEEP</h2>
+                </div>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    <div class="container">
+
+        <div class="about-heading">
+            <h1>
+            About Us
+            </h1>
+        </div>
+
+        <div class="main">
+            
+           <div class="about-back"><h3>Background</h3></div> 
+<p class="about-info">
+            XL Sweep is a platform that was created by a team of developers and designers in fulfillment of the Zuri
+            training requirement. The platform was created to provide a simple user friendly solution for comparing
+            excel/spreadsheet files easily. It is targeted at users who regularly work with excel files and need a
+            simple way to compare files or documents with similar contents, check for differences and make simple
+            changes like remove duplicates, remove empty cells, merge two files into one and download or save the file
+            for future use.</p>
+        </div>
+
+    </div>
+    </main>
+
+    <footer>
+        <div id="xl-sweep-logo">
+            <div id="xl-logo">
+                <div class="footer-logo">
+                <div class="green-logo">
+                    <img class="logo" src="picss/Vector.png"     class="vectorgreen" alt="">
+                </div>
+                <div class="blue-logo">
+                    <img class="logo" src="picss/Vector-1.png"  class="vectorblue" alt="">
+[O                </div>
+            </div>
+            
+            </div>
+            <div class="sweep" id="xlsweep-bottom">
+                <h2>XL SWEEP</h2>
+            </div>
+        
+        </div>
+    
+        <div class="footer-top">
+            <ul>
+                <li><a href="./index.html" class="index">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="footer-bottom">
+            <ul class="terms">
+                <li><a href="./terms.html">Terms & Conditions |</a></li>
+                <li><a href="./privacy.html">Privacy Policy |</a></li>
+            </ul>
+            <p class="rights">XL Sweep 2022. All rights reserved.</p>
+        </div>
+     
+    </footer>
+
+
+</body>
+
+</html>
