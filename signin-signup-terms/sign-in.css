@@ -271,4 +271,32 @@ input:focus:invalid {
 a{
   text-decoration: none;
 }
-* { border: 1px solid red; }
+@media  screen and (max-width: 800px){
+  body{
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+  }
+  .body-right{
+    box-shadow: none;
+  }
+  
+  .body-left,
+.logo,
+.left-text,.top,
+.left-text,.bottom,.compare{
+display: none !important;
+
+}
+.footer{
+  display: inline-flex;
+  /* margin-top: 3rem; */
+  font-size:0.6rem;
+  justify-content: center;
+  align-items: center;
+}
+   .comp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
