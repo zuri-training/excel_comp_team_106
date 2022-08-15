@@ -1,6 +1,6 @@
 # excel_comp_team_106
 
-This is a webapp that compares two excel files.
+Project requirement: To create a web application that compares two excel files
 
 ## Product Name
 
