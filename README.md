@@ -70,7 +70,7 @@ The goal of the project is to provide a simple user friendly platform that would
   + (https://www.figma.com/file/nWw40lzebQJ0QVNOs8g5Kx/Team106_ExelComp---USER-RESEARCH)
 
 + [Figma board]
-  + (<https://www.figma.com/file/nWw40lzebQJ0QVNOs8g5Kx/Team106_ExelComp---USER-RESEARCH?node-id=0%3A1>)
+  + (https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=512%3A2)
 
 + [Figma Design Library]
   + (<https://www.figma.com/file/rxBh6oIKJ0Hb96TlXKoF7f/Team-106_ExcelComp---TEAM-DESIGN-LIBRARY?node-id=0%3A1>)
