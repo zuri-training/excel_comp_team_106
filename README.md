@@ -35,6 +35,25 @@ The goal of the project is to provide a simple user friendly platform that would
 
 + Framework
   + Django.
+  
+  
+## Local Deployement
+
++ Create a folder: mkdir folder_name
+
++ Change directory to the folder: cd folder_name
+
++ Clone main branch to folder: git clone --branch main https://github.com/zuri-training/excel_comp_team_106.
+
++ Create virtual environment: python3 -m venv venv (or your preferred virtual environment)
+
++ Activate virtual environment: For Mac (source venv/bin/activate), Windows (.\venv\Scripts\activate)
+
++ Install packages: pip install -r requirements.txt
+
++ Make migrations: python manage.py migrate
+
++ Run the local server: python manage.py runserver
 
 ## Team Link
 
