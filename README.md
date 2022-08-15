@@ -58,13 +58,16 @@ The goal of the project is to provide a simple user friendly platform that would
 ## Team Link
 
 + [Team Members List]
-  + (<https://docs.google.com/document/d/1Ua9-18yFXST7Wq0ZAe46Dg2S_MyS9s3jV3ZGoKdqkkQ/edit?usp=sharing>)
+  <https://docs.google.com/document/d/1Ua9-18yFXST7Wq0ZAe46Dg2S_MyS9s3jV3ZGoKdqkkQ/edit?usp=sharing>)
 
 + [Git-Hub Link]
   + (<https://github.com/orgs/zuri-training/projects/395>)
 
 + [User research plan]
   + (<https://docs.google.com/document/d/1JA4gVAgW35vJIZaYAsPe3yZpvStiBLwKoWVMS5rYkgM/edit?usp=sharing>)
+
++ [User research figjam link]
+  + (https://www.figma.com/file/nWw40lzebQJ0QVNOs8g5Kx/Team106_ExelComp---USER-RESEARCH)
 
 + [Figma board]
   + (<https://www.figma.com/file/nWw40lzebQJ0QVNOs8g5Kx/Team106_ExelComp---USER-RESEARCH?node-id=0%3A1>)
