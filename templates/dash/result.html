@@ -1,0 +1,16 @@
+
+<html>
+  <body>
+  
+  <form method="post" >
+    <button type="submit" name="down" value="download">download 1</button>
+    {% csrf_token %}
+    <button type="submit" name="down" value="download2">download 2</button>
+    {% csrf_token %}
+  </form>  
+  
+    <table>
+      {{first|safe}} {{second|safe}}
+    </table>
+  </body>
+</html>

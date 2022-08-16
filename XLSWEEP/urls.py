@@ -22,6 +22,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+app_name = "Accounts"
+app_name = "dashboard"
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls), # enables admin site app on the admin/ url directory
     path('', include('Accounts.urls')), # to add the urls from accounts to the project urls

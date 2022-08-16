@@ -3,23 +3,24 @@
 <html>
 
   <head>
+    {% load static %}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <link rel="stylesheet" href="reset.css"  />  <!--<media="screen"> -->
-    <link rel="stylesheet" href="sign-in.css" />
+     <link rel="stylesheet" href="{% static 'css/reset.css' %}"  />  <!--<media="screen"> -->
+    <link rel="stylesheet" href="{%static 'css/sign-in.css' %}" />
   </head>
-
+  
   <body>
     <!-- <main> -->
       <div class="body-left">
-        <img class="logo" src="images/XL SWEEP LOGO.svg" />
+        <img class="logo" src="{% static 'img/XL SWEEP LOGO.svg' %}" />
         <p class="left-text top">With the help of our user friendly tool</p>
         <p class="left-text bottom">Compare Excel Files Online with ease</p>
         <div class="comp">
-        <img class=".compare" src="images/XLS FILES COMPARE.svg" /></div>
+        <img class=".compare" src="{% static 'img/XLS FILES COMPARE.svg' %}" /></div>
       </div>
       </div>
       <div class="body-right">
@@ -27,36 +28,24 @@
           <h2 class="form-head">Sign In</h2>
           <p class="free-text">It's free and will always be free</p>
           <button class="google-btn">
-            <img class="google-img" src="images/Frame 192.svg" />Continue with
+            <img class="google-img" src="{% static 'img/Frame 192.svg' %}" />Continue with
             Google
           </button>
           <p class="or">Or</p>
           <form novalidate method="post">
             <div class="flex-form">
-            <label class="reg-text" for="email">Email Address</label>
-            <input
-              class="signin"
-              type="email"
-              id="email"
-              placeholder="johndoe@gmail.com"
-              required
-              
-            />
+            <label class="reg-text" for="email">Username</label>
+            {{ form.username }} 
             <small class="error" aria-live="polite"></small>
             <label class="reg-text" for="password">Password</label>
-            <input
-              class="signin"
-              type="password"
-              id="password"
-              placeholder="Enter your password"
-              required
-            />
-            
-
+            {{ form.password }}
             <a class="reg-text fgt">Forgot your Password?</a>
+            <small class="error" aria-live="polite"></small>
+            <label class="reg-text" for="Remember me">Remember me</label>
+            {{ form.remember_me }}
             <button class="signin-btn">Sign in</button>
 
-            <p class="sign-link">Don't have an account? <a href="sign-up.html">Sign up</a></p>
+            <p class="sign-link">Don't have an account? <a href="{% url 'Accounts-register' %}">Sign up</a></p>
           
       </form><footer class="footer">
           <p class="copyright">XL Sweep 2022. All rights reserved &nbsp;|</p>
@@ -68,7 +57,7 @@
       </div>
     <!-- </main> -->
 
-    <script src="sign.js" async defer></script>
+    <script src="{% static 'js/sign.js' %}" async defer></script>
 
   </body>
 
