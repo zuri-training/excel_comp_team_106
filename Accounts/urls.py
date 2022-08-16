@@ -1,6 +1,5 @@
-from django.contrib import admin
-from django.urls import path, include 
-from . import views # this imports views as a module. its functions are then called for the urls
+from django.urls import path 
+from Accounts import views # this imports views as a module. its functions are then called for the urls
 
 
 urlpatterns = [

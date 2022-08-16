@@ -1,16 +1,15 @@
-from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.views import View
 
-from .forms import RegisterForm, LoginForm
+from Accounts.forms import RegisterForm, LoginForm
 from django.contrib.auth.views import LoginView
 from django.urls import reverse_lazy
 from django.contrib.auth.views import PasswordResetView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.decorators import login_required
 
-from .forms import UpdateUserForm, UpdateProfileForm
+from Accounts.forms import UpdateUserForm, UpdateProfileForm
 from django.contrib.auth.views import PasswordChangeView
 
 

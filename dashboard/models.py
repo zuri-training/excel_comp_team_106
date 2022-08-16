@@ -1,8 +1,11 @@
 from django.db import models
 
-class File(models.Model):
-    file1 = models.FileField(upload_to='media')
-    file2 = models.FileField(upload_to='media')
+class Excel_doc_one(models.Model):
+    file_one = models.FileField(upload_to='saved/%Y/%m/%d/')
+    
 
-    def __str__(self):
-        return '{} and {}'.format(self.file1,self.file2)
+class Excel_doc_two(models.Model):
+    file_two = models.FileField(upload_to='saved/%Y/%m/%d/',)
+
+
+    

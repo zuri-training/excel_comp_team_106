@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XL-SWEEP</title>
-    <link rel="stylesheet" href="unauth.css">
+    <link rel="stylesheet" href="{% static 'css/unauth.css' %}">
 </head>
 <body>
     <!-- Header section -->
     <header id="header">
         <nav id="navbar">
             <div class="logo">
-                <img src="./unauthimg/xl-sweeplogo.png" alt="XL-sweep logo">
+                <img src="{% static 'img/unauthimg/xl-sweeplogo.png' %}" alt="XL-sweep logo">
             </div>
             
                 <div class="nav-links" id="navi">
@@ -24,8 +25,8 @@
                     </ul>
                 </div>
                 <div class="nav-btn" id="navi">
-                    <button class="sign-in">Sign In</button>
-                    <button class="sign-up">Sign Up</button>
+                    <button ><a class="btn btn-primary btn-lg" href="login" role="button">Sign in</a></button>
+                    <button > <a href="{% url 'Accounts-register' %}">Sign Up</a></a</button>
                 </div>
         </nav>
     </header>
@@ -37,10 +38,10 @@
             <div class="first-1">
                 <h1>Compare <span>Excel</span> Files Online</h1>
                 <p>Our Excel file Comparism Software allows Users compare and highlight changes in spreadsheet files with the help of user friendly tools.</p>
-                <button class="first-btn">Explore Now</button>
+                <button class="first-btn"><a href="index" role="button">Explore Now</a></button>
             </div>
             
-            <img src="./unauthimg/hero section image vfb.png" alt="">
+            <img src="{% static 'img/unauthimg/hero section image vfb.png'%}" alt="">
         </div>
 
         <!-- Second Section -->
@@ -53,7 +54,7 @@
                     </div>
                     <div class="extract2 div">
                         <div class="div1">
-                            <img src="./unauthimg/extract.png" alt="">
+                            <img src="{% static 'img/unauthimg/extract.png' %}" alt="">
                             <div class="img-bg"></div>
                         </div>
                         <div class="div2">
@@ -73,7 +74,7 @@
                     </div>
                     <div class="track2 div">
                         <div class="div1">
-                            <img src="./unauthimg/track.png" alt="">
+                            <img src="{% static 'img/unauthimg/track.png' %}" alt="">
                             <div class="img-bg"></div>
                         </div>
                         <div class="div2">
@@ -91,7 +92,7 @@
                     </div>
                     <div class="manage2 div">
                         <div class="div1">
-                            <img src="./unauthimg/manage.png" alt="">
+                            <img src="{% static 'img/unauthimg/manage.png' %}" alt="">
                             <div class="img-bg"></div>
                         </div>
                         <div class="div2">
@@ -110,36 +111,36 @@
             <div class="third1">
                 <table>
                     <tr>
-                        <td class="left"><img src="./unauthimg/upload.png" alt=""></td>
+                        <td class="left"><img src="{% static 'img/unauthimg/upload.png' %}" alt=""></td>
                         <td><p class="heading">Upload</p>
                         <p class="third-text">Upload the two excel files to be compared separately and select the   required sheet </p></td>
                     </tr>
                     <tr>
-                        <td class="left"><img src="./unauthimg/criteria.png" alt=""></td>
+                        <td class="left"><img src="{% static 'img/unauthimg/criteria.png' %}" alt=""></td>
                         <td><p class="heading">Criteria</p>
                         <p class="third-text">Select the necessary criteria, which connotes the nature of comparison you are about to take</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="left"><img src="./unauthimg/click.png" alt=""></td>
+                        <td class="left"><img src="{% static 'img/unauthimg/click.png' %}" alt=""></td>
                         <td><p class="heading">Click</p>
                         <p class="third-text">Click the “COMPARE” button below and get the action to perform</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="left"><img src="./unauthimg/duration.png" alt=""></td>
+                        <td class="left"><img src="{% static 'img/unauthimg/duration.png' %}" alt=""></td>
                         <td><p class="heading">Duration</p>
                         <p class="third-text">Files will be  deleted from our servers after 24 HOURS and download links would stop working</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="left"><img src="./unauthimg/maxfile.png" alt=""></td>
+                        <td class="left"><img src="{% static 'img/unauthimg/maxfile.png' %}" alt=""></td>
                         <td><p class="heading">Maximum</p>
                         <p class="third-text">Files should not be larger than 10MB</p>
                         </td>
                     </tr>
                 </table>
-                <img class="monitor" src="./unauthimg/monitor revamp 1.png" alt="">
+                <img class="monitor" src="{% static 'img/unauthimg/monitor revamp 1.png' %}" alt="">
             </div>
         </div>
 
@@ -151,23 +152,23 @@
                 <div class="fourth1a">
                     <table class="fourth-table">
                         <tr>
-                            <td class="left"><img src="./unauthimg/upload2.png" alt=""></td>
+                            <td class="left"><img src="{% static 'img/unauthimg/upload2.png' %}" alt=""></td>
                             <td>1. Uploading of files through Google  Drive and Dropbox.</td>
                         </tr>
                         <tr>
-                            <td class="left"><img src="./unauthimg/highlight.png" alt=""></td>
+                            <td class="left"><img src="{% static 'img/unauthimg/highlight.png' %}" alt=""></td>
                             <td>2. Highlighting and/or removing blank cells</td>
                         </tr>
                         <tr>
-                            <td class="left"><img src="./unauthimg/merge.png" alt=""></td>
+                            <td class="left"><img src="{% static 'img/unauthimg/merge.png' %}" alt=""></td>
                             <td>3. Merging two files into one</td>
                         </tr>
                         <tr>
-                            <td class="left"><img src="./unauthimg/export.png" alt=""></td>
+                            <td class="left"><img src="{% static 'img/unauthimg/export.png' %}" alt=""></td>
                             <td>4. Allow export of one or two Files</td>
                         </tr>
                         <tr>
-                            <td class="left"><img src="./unauthimg/remove.png" alt=""></td>
+                            <td class="left"><img src="{% static 'img/unauthimg/remove.png' %}" alt=""></td>
                             <td>5. Highlight and remove duplicates</td>
                         </tr>
                     </table>
@@ -191,7 +192,7 @@
                             <p>All your file processing and comparison is  done in your browser. Nobody else can have access to your file.</p>
                         </div>
                         <div class="gdpr">
-                            <img src="./unauthimg/gdpr.png" alt="">
+                            <img src="{% static 'img/unauthimg/gdpr.png' %}" alt="">
                             <div class="fifth-bg blue"></div>
                         </div>
                     </div>
@@ -200,7 +201,7 @@
 
                     <div class="fifth1 comparism">
                         <div class="compare">
-                            <img src="./unauthimg/compare.png" alt="">
+                            <img src="{% static 'img/unauthimg/compare.png' %}" alt="">
                             <div class="fifth-bg yellow"></div>
                         </div>
                         <div>
@@ -216,7 +217,7 @@
                             <p>After comparison you get to download your file in a layout that is easy to comprehend and understood.</p>
                         </div>
                         <div class="quality">
-                            <img src="./unauthimg/data quality.png" alt="">
+                            <img src="{% static 'img/unauthimg/data quality.png' %}" alt="">
                             <div class="fifth-bg green"><div></div>
                         </div>
                     </div>
@@ -230,7 +231,8 @@
         <div class="sixth">
             <div class="ready">
                 <h2>Ready to Compare your spreadsheet files effortlessly?</h2>
-                <button class="ready-btn">Get Started</button>
+                <button class="ready-btn"><a href="index" role="button">Get Started</a></button>
+                
             </div>
         </div>
         
@@ -239,7 +241,7 @@
     <footer id="footer">
         <div id="footer-nav">
             <div class="logo">
-                <img src="./unauthimg/xl-sweeplogo.png" alt="XL-sweep logo">
+                <img src="{% static 'img/unauthimg/xl-sweeplogo.png' %}" alt="XL-sweep logo">
             </div>
             
             <div class="ft-links">
@@ -263,7 +265,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="./unauth.js"></script>
+    <script src="{% static 'js/unauth.js' %}"></script>
 </body>
 </html>

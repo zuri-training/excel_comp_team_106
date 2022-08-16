@@ -1,10 +1,13 @@
-from socket import fromshare
-from django import forms
-from .models import File
 
-class FileForm(forms.ModelForm):
-    """Form for the image model"""
-    class Meta:
-        model = File
-        fields = ('title', 'file')
+#class FileForm(forms.ModelForm):
+#    """Form for the file model"""
+#    class Meta:
+#        model = Excel_doc_one
+#        fields = ('file_one')
+
+#class FileFormTwo(forms.ModelForm):
+#    """Form for the file model"""
+#    class Meta:
+#        model = Excel_doc_two
+#        fields = ('file_two') 
 
