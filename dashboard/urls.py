@@ -7,5 +7,8 @@ from dashboard import views # this imports views as a module. its functions are 
 urlpatterns = [
     path('result/', views.download, name='result'),
     path('index/', views.result_view, name='index'),
+    path('contact/', views.contactview, name='contact'),
+    path('about/', views.aboutusview, name='about'),
+    path('policy/', views.policyview, name='privacypolicy'),
 ]
 

@@ -18,15 +18,16 @@
             
                 <div class="nav-links" id="navi">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="{% url 'Accounts-home' %}">Home</a></li>
+                        <li><a href="about">About</a></li>                       
+                        <li><a href="contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="nav-btn" id="navi">
-                    <button ><a class="btn btn-primary btn-lg" href="login" role="button">Sign in</a></button>
-                    <button > <a href="{% url 'Accounts-register' %}">Sign Up</a></a</button>
+                <div>
+                    <a class = "buton" href="{% url 'login' %}">Sign In</a>
+                    <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
+                    <!--<button class="login">Sign In</button>
+                    <button class="{% url 'Accounts-register' %}">Sign Up</button>-->
                 </div>
         </nav>
     </header>
@@ -34,18 +35,18 @@
     <main>
         
         <!-- First Section -->
-        <div class="first">
+        <div class="first" style = "background-image: url({% static 'img/unauthimg/polygon-group.png' %}),linear-gradient(178.24deg, #FFFFFF 1.49%, #A7C2F5 174.99%, #F1F5FE 174.99%)">
             <div class="first-1">
                 <h1>Compare <span>Excel</span> Files Online</h1>
                 <p>Our Excel file Comparism Software allows Users compare and highlight changes in spreadsheet files with the help of user friendly tools.</p>
-                <button class="first-btn"><a href="index" role="button">Explore Now</a></button>
+                <button class="first-btn"><a class="butn" href="index" role="button">Explore Now</a></button>
             </div>
             
-            <img src="{% static 'img/unauthimg/hero section image vfb.png'%}" alt="">
+            <img src="{% static 'img/unauthimg/hero section image vfb.png' %}" alt="">
         </div>
 
         <!-- Second Section -->
-        <div class="second">
+        <div class="second" style = "background-image: url({% static 'img/unauthimg/second-section.png' %})">
             <h5>What we offer</h5>
             <div class="second-section">
                 <div class="second-1">
@@ -231,7 +232,7 @@
         <div class="sixth">
             <div class="ready">
                 <h2>Ready to Compare your spreadsheet files effortlessly?</h2>
-                <button class="ready-btn"><a href="index" role="button">Get Started</a></button>
+                <button class="ready-btn"><a class="butnn" href="index">Get Started</a></button>
                 
             </div>
         </div>
@@ -246,10 +247,9 @@
             
             <div class="ft-links">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="{% url 'Accounts-home' %}">Home</a></li>
+                        <li><a href="about">About</a></li>                       
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
             </div>
 
@@ -265,6 +265,7 @@
             </div>
         </div>
     </footer>
+
     <script src="{% static 'js/unauth.js' %}"></script>
 </body>
 </html>

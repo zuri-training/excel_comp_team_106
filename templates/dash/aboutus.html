@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -226,7 +227,18 @@ hr{
     
 }
 
-
+.buton {
+        background-color: #003DB2;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
 
 @media all and (max-width: 700px){
 
@@ -408,15 +420,14 @@ bottom: 58px;
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="{% url 'Accounts-home' %}" class="home">Home</a></li>
+                    <li><a href="{% url 'about' %}" class= "about">About</a></li>
+                    <li><a href="{% url 'contact' %}" class="contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="nav-btn">
-                <button class="sign-in">Sign In</button>
-                <button class="sign-up">Sign Up</button>
+            <div class="nav-links">
+                <a class = "buton" href="{% url 'login' %}">Sign In</a>
+                <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
             </div>
         </nav>
     </header>
@@ -438,8 +449,7 @@ bottom: 58px;
             training requirement. The platform was created to provide a simple user friendly solution for comparing
             excel/spreadsheet files easily. It is targeted at users who regularly work with excel files and need a
             simple way to compare files or documents with similar contents, check for differences and make simple
-            changes like remove duplicates, remove empty cells, merge two files into one and download or save the file
-            for future use.</p>
+            changes like remove duplicates, higlight duplicates and differences, merge two files into one and download.</p>
         </div>
 
     </div>
@@ -454,7 +464,7 @@ bottom: 58px;
                 </div>
                 <div class="blue-logo">
                     <img class="logo" src="picss/Vector-1.png"  class="vectorblue" alt="">
-[O                </div>
+                </div>
             </div>
             
             </div>
@@ -466,18 +476,16 @@ bottom: 58px;
     
         <div class="footer-top">
             <ul>
-                <li><a href="./index.html" class="index">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="{% url 'Accounts-home' %}" class="home">Home</a></li>
+                <li><a href="{% url 'about' %}" class= "about">About</a></li>
+                <li><a href="{% url 'contact' %}" class="contact">Contact</a></li>
             </ul>
         </div>
         <hr>
 
         <div class="footer-bottom">
             <ul class="terms">
-                <li><a href="./terms.html">Terms & Conditions |</a></li>
-                <li><a href="./privacy.html">Privacy Policy |</a></li>
+                <li><a href="{% url 'privacypolicy' %}">Privacy Policy |</a></li>
             </ul>
             <p class="rights">XL Sweep 2022. All rights reserved.</p>
         </div>
