@@ -1,5 +1,5 @@
-from django.shortcuts import render,redirect
 import os
+from django.shortcuts import render,redirect
 from django.conf import settings
 from django.http import HttpResponse
 import pandas as pd
@@ -13,6 +13,8 @@ def download(request):
     name2 = request.session.get('came')
     C = request.session.get('stay')
     D = request.session.get ('hay')
+    number = request.session.get ('num')
+    diff, sim = number
 
     if request.method == 'POST':
         dat = request.POST
@@ -31,7 +33,8 @@ def download(request):
                     response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
                     response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
                 return response
-    return render(request, "dash/result.html", {"first":C, "second":D})
+    
+    return render(request, "dash/result.html", {"first":C, "second":D, "diff":diff,"sim":sim})
 
 
 def result_view(request):
@@ -43,7 +46,6 @@ def result_view(request):
 
         data = request.POST
         action = data.get("criteria")
-        decision = data.get("download")
         compare = data.get("compare")
 
         name = 'excel/comp_{}'.format(file1)
@@ -53,6 +55,22 @@ def result_view(request):
         fileB = pd.read_excel(file2)
         fileI = pd.read_excel(file1)
         fileII = pd.read_excel(file2) 
+
+        f,z=[],[]
+        for i, j in zip(fileA,fileB):
+            a,b = 0,0
+            a,b = [],[]
+            for m,n in zip(fileA[i],fileB[j]):
+                a.append(m)
+                b.append(n)
+            for m,n in zip(range(len(a)),range(len(b))):
+                if a[m] == b[n]:
+                    z.append(a[m])
+                if a[m] != b[n]:
+                    f.append(a[m])
+                
+        number = len(z), len(f)
+        request.session['num'] = number
 
         if action == "highlight":
             ask = "not"
@@ -77,7 +95,7 @@ def result_view(request):
 
             return redirect("result")
 
-        if decision == 'merge':
+        if action == 'merge':
             ask = "merge"
             fileA = comp_code.high(fileA,fileB, ask)
         
@@ -116,6 +134,25 @@ def result_view(request):
             return redirect("result")
 
     return render(request, "index.html")
+
+
+
+def contactview(request):
+    return render(request, "dash/contact.html")
+    
+
+def aboutusview(request):
+    return render(request, "dash/aboutus.html")
+
+
+def policyview(request):
+    return render(request, "dash/privacypolicy.html")
+    
+
+
+
+
+
     
 
 

@@ -1,3 +1,4 @@
+
 /* Google Fonts Import Links */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
 
@@ -36,6 +37,45 @@ header {
     justify-content: space-around;
     padding: 2rem 0;
 }
+
+.buton {
+    background-color: #003DB2;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .butn {
+    background-color: #003DB2 ;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .butnn {
+    background-color: #003DB2 ;
+    border: none;
+    color: white;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
 
 #navbar ul {
     display: flex;
@@ -95,7 +135,7 @@ main {
     /* justify-content: space-between; */
 
     /* linear gradient */
-    background-image: url(./unauthimg/polygon\ group.png),linear-gradient(178.24deg, #FFFFFF 1.49%, #A7C2F5 174.99%, #F1F5FE 174.99%);
+    /*background: url("/static/img/unauthimg/polygon-group.png"),linear-gradient(178.24deg, #FFFFFF 1.49%, #A7C2F5 174.99%, #F1F5FE 174.99%);*/
     background-size: cover;
 
 }
@@ -145,7 +185,7 @@ main {
 
 .second {
     /* background: rgba(0, 36, 106, 0.01); */
-    background-image: url(./unauthimg/second-section.png);
+    /*background: url('/static/static/img/unauthimg/second-section.png');*/
     background-size: cover;
     padding: 2rem;
     align-items: center;

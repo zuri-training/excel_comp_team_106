@@ -9,6 +9,9 @@
     {% csrf_token %}
   </form>  
   
+  <li>{{ diff }}</li>
+  <li>{{ sim }}</li>
+  
     <table>
       {{first|safe}} {{second|safe}}
     </table>

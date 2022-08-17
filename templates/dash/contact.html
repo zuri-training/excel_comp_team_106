@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,6 +44,18 @@
       
     }
 
+    .buton {
+        background-color: #003DB2;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
 
     #navbar {
         background-color: #fff;
@@ -499,10 +512,10 @@ margin-left: 50px;
             <div id="xl-sweep-logo">
                 <div id="xl-logo">
                     <div class="green-logo">
-                        <img class="logo" src="picss/Vector.png" class="vectorgreen" alt="">
+                        <img class="logo" src="{% static 'img/Vectorgreen.png' %}" class="vectorgreen" alt="">
                     </div>
                     <div class="blue-logo">
-                        <img class="logo" src="picss/Vector-1.png" class="vectorblue" alt="">
+                        <img class="logo" src="{% static 'img/Vectorblue.png' %}" class="vectorblue" alt="">
                     </div>
                 </div>
                 <div class="sweep">
@@ -511,15 +524,16 @@ margin-left: 50px;
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="{% url 'Accounts-home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-btn">
-                <button class="sign-in">Sign In</button>
-                <button class="sign-up">Sign Up</button>
+                <a class = "buton" href="{% url 'login' %}">Sign In</a>
+                <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
+                <!--<button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>-->
             </div>
         </nav>
     </header>
@@ -540,7 +554,7 @@ margin-left: 50px;
 
                 <div class="phone">
                     <figure>
-                    <img src="picss/phone.png" alt="phone" class="phone-img">
+                    <img src="{% static 'img/phone.png' %}" alt="phone" class="phone-img">
                     <figcaption class="top-figcaption">+234 456 789 0123</figcaption>
                     <figcaption class="bottom-figcaption">Get response immediately</figcaption>
                 
@@ -550,7 +564,7 @@ margin-left: 50px;
 
                 <div class="computer">
                     <figure>
-                    <img src="picss/tab.png" alt="computer"  class="comp-img">
+                    <img src="{% static 'img/tab.png' %}" alt="computer"  class="comp-img">
                     <figcaption class="top-figcaption">info@xlsweep.io</figcaption>
                     <figcaption class="bottom-figcaption">Get response immediately</figcaption>
                 </figure>
@@ -558,7 +572,7 @@ margin-left: 50px;
 
                 <div class="chat">
                     <figure>
-                    <img src="picss/2chat.png" alt="chat" class="chat-img">
+                    <img src="{% static 'img/2chat.png' %}" alt="chat" class="chat-img">
                     <figcaption class="top-figcaption">+234 456 789 0123</figcaption>
                     <figcaption class="bottom-figcaption">Get response immediately</figcaption>
                 </figure>
@@ -578,10 +592,10 @@ margin-left: 50px;
             <div id="xl-logo">
                 <div class="footer-logo">
                 <div class="green-logo">
-                    <img class="logo" src="picss/Vector.png"     class="vectorgreen" alt="xl-logo">
+                    <img class="logo" src="{% static 'img/Vectorgreen.png' %}"     class="vectorgreen" alt="xl-logo">
                 </div>
                 <div class="blue-logo">
-                    <img class="logo" src="picss/Vector-1.png"  class="vectorblue" alt="xl-logo">
+                    <img class="logo" src="{% static 'img/Vectorblue.png' %}"  class="vectorblue" alt="xl-logo">
                 </div>
             </div>
             </div>
@@ -594,18 +608,17 @@ margin-left: 50px;
     
         <div class="footer-top">
             <ul>
-                <li><a href="./index.html" class="index">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="{% url 'Accounts-home' %}" class="index">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
         <hr>
 
         <div class="footer-bottom">
             <ul class="term">
-                <li><a href="./terms.html">Terms & Conditions |</a></li>
-                <li><a href="./privacy.html">Privacy Policy &nbsp;|</a></li>
+                <li>Terms & Conditions |</li>
+                <li><a href="{% url 'privacypolicy' %}">Privacy Policy &nbsp;|</a></li>
             </ul>
             <p>XL Sweep 2022. All rights reserved.</p>
         </div>

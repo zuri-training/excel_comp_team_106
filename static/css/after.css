@@ -14,6 +14,19 @@
     border-bottom: 1px solid #B3B3B4;
 }
 
+.buton {
+    background-color: #003DB2;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
 .logo {
     position: absolute;
     height: 39px;
@@ -683,6 +696,15 @@ label#idr {
 }
 
 #highlight {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 77%;
+    top: 71%;
+    background-color: rgb(255, 0, 0);
+}
+
+#merge {
     position: absolute;
     width: 15px;
     height: 15px;

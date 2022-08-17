@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -224,6 +225,19 @@ h1{
 
 }
 
+.buton {
+        background-color: #003DB2;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
 @media screen and (max-width:700px)  {
 
 
@@ -376,10 +390,10 @@ top: 3px;
             <div id="xl-sweep-logo">
                 <div id="xl-logo">
                     <div class="green-logo">
-                        <img class="logo" src="picss/Vector.png" class="vectorgreen" alt="xl-logo">
+                        <img class="logo" src="{% static 'img/Vectorgreen.png' %}" class="vectorgreen" alt="xl-logo">
                     </div>
                     <div class="blue-logo">
-                        <img class="logo" src="picss/Vector-1.png" class="vectorblue" alt="xl-logo">
+                        <img class="logo" src="{% static 'img/Vectorblue.png' %}" class="vectorblue" alt="xl-logo">
                     </div>
                 </div>
                 <div class="sweep">
@@ -388,15 +402,14 @@ top: 3px;
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="{% url 'Accounts-home' %}" class="home">Home</a></li>
+                    <li><a href="{% url 'about' %}" class= "about">About</a></li>
+                    <li><a href="{% url 'contact' %}" class="contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="nav-btn">
-                <button class="sign-in">Sign In</button>
-                <button class="sign-up">Sign Up</button>
+            <div class="nav-links">
+                <a class = "buton" href="{% url 'login' %}" role=>Sign In</a>
+                <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
             </div>
         </nav>
     </header>
@@ -606,10 +619,10 @@ top: 3px;
             <div id="xl-logo">
                 <div class="footer-logo">
                 <div class="green-logo">
-                    <img class="logo" src="picss/Vector.png"     class="vectorgreen" alt="xl-logo">
+                    <img class="logo" src="{% static 'img/Vectorgreen.png' %}"     class="vectorgreen" alt="xl-logo">
                 </div>
                 <div class="blue-logo">
-                    <img class="logo" src="picss/Vector-1.png"  class="vectorblue" alt="xl-logo">
+                    <img class="logo" src="{% static 'img/Vectorblue.png' %}"  class="vectorblue" alt="xl-logo">
                 </div>
             </div>
             </div>
@@ -621,19 +634,18 @@ top: 3px;
         </div>
     
         <div class="footer-top">
-            <ul>
-                <li><a href="./index.html" class="index">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+            <ul>           
+                <li><a href="{% url 'Accounts-home' %}" class="home">Home</a></li>
+                <li><a href="{% url 'about' %}" class= "about">About</a></li>
+                <li><a href="{% url 'contact' %}" class="contact">Contact</a></li>
             </ul>
         </div>
         <hr>
 
         <div class="footer-bottom">
             <ul>
-                <li><a href="./terms.html">Terms & Conditions</a></li>
-                <li><a href="./privacy.html">|&nbsp;Privacy Policy |</a></li>
+                <li>Terms & Conditions</li>
+                <li><a href="{% url 'privacypolicy' %}">|&nbsp;Privacy Policy |</a></li>
             </ul>
 
             <p class="rights">XL Sweep 2022. All rights reserved.</p>
