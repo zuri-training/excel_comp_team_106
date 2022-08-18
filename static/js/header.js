@@ -97,14 +97,15 @@ li a {
 </style>
 
     <header>
+       {% load static %}
         <nav id="navbar">
             <div id="xl-sweep-logo">
                 <div id="xl-logo">
                     <div class="green-logo">
-                        <img class="logo" src="./images/Vectorgreen.png"     class="vectorgreen" alt="">
+                        <img class="logo" src="{% static 'img/Vector.png'%}"     class="vectorgreen" alt="">
                     </div>
                     <div class="blue-logo">
-                        <img class="logo" src="./images/Vectorblue.png"  class="vectorblue" alt="">
+                        <img class="logo" src="{% static 'img/Vectorblue.png'%}"  class="vectorblue" alt="">
                     </div>
                 </div>
                 <div class="sweep">
@@ -113,15 +114,13 @@ li a {
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="{% url 'Accounts-home' %}>Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-btn">
-                <a href= /sign-in.html><button class="sign-in">Sign In</button></a>
-                <button class="sign-up">Sign Up</button>
+                <a href= "{% url 'login' %}"><button class="sign-in">Sign In</button></a>
             </div>
         </nav>
 </header>

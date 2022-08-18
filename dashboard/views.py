@@ -2,10 +2,11 @@ import os
 from django.shortcuts import render,redirect
 from django.conf import settings
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 import pandas as pd
 from dashboard import comp_code
 
-
+@login_required
 def download(request):
 
     
@@ -36,7 +37,7 @@ def download(request):
     
     return render(request, "dash/result.html", {"first":C, "second":D, "diff":diff,"sim":sim})
 
-
+@login_required
 def result_view(request):
 
     if request.method == 'POST':
