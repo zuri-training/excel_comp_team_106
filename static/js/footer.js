@@ -114,13 +114,14 @@ hr {
 </style>
 
     <footer>
+    {% load static %}
         <div id="xl-sweep-logo">
             <div id="xl-logo">
                 <div class="green-logo">
-                    <img class="logo" src="./images/Vectorgreen.png"     class="vectorgreen" alt="">
+                    <img class="logo" src="{% static 'img/Vectorgreen.png'%}"     class="vectorgreen" alt="">
                 </div>
                 <div class="blue-logo">
-                    <img class="logo" src="./images/Vectorblue.png"  class="vectorblue" alt="">
+                    <img class="logo" src="{% static 'img/Vectorblue.png'%}"  class="vectorblue" alt="">
                 </div>
             </div>
             <div class="sweep">
@@ -131,16 +132,15 @@ hr {
     
         <div class="footer-top">
             <ul>
-                <li><a href="./index.html" class="index">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="{% url 'Accounts-home' %}" class="index">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
         <hr>
         <div class="footer-bottom">
             <ul>
-                <li><a href="./terms.html">Terms & Conditions |</a></li>
+                <li>Terms & Conditions |</li>
                 <li><a href="./privacy.html">Privacy Policy |</a></li>
             </ul>
             <p>XL Sweep 2022. All rights reserved.</p>

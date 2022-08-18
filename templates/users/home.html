@@ -12,10 +12,10 @@
     <!-- Header section -->
     <header id="header">
         <nav id="navbar">
-            <div class="logo">
-                <img src="{% static 'img/unauthimg/xl-sweeplogo.png' %}" alt="XL-sweep logo">
-            </div>
-            
+               <div class="logo">
+                  <img src="{% static 'img/unauthimg/xl-sweeplogo.png' %}" alt="XL-sweep logo">
+               </div>
+          {% if user.is_authenticated %}
                 <div class="nav-links" id="navi">
                     <ul>
                         <li><a href="{% url 'Accounts-home' %}">Home</a></li>
@@ -24,11 +24,26 @@
                     </ul>
                 </div>
                 <div>
+                    <a class = "buton" href="profile/" class="nav-item nav-link">Profile</a>
+                    <a class = "buton" href="logout/" class="nav-item nav-link">Logout</a>
                     <a class = "buton" href="{% url 'login' %}">Sign In</a>
-                    <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
                     <!--<button class="login">Sign In</button>
                     <button class="{% url 'Accounts-register' %}">Sign Up</button>-->
                 </div>
+         {% else %}
+                  <div class="nav-links" id="navi">
+                    <ul>
+                        <li><a href="{% url 'Accounts-home' %}">Home</a></li>
+                        <li><a href="about">About</a></li>                       
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </div>
+                  <div>
+                      <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
+                      <!--<button class="login">Sign In</button>
+                      <button class="{% url 'Accounts-register' %}">Sign Up</button>-->
+                 </div>
+          {% endif %}
         </nav>
     </header>
     <!-- Main Section -->
@@ -61,7 +76,7 @@
                         <div class="div2">
                             <h5>Easy extraction
                             of actionable insights.</h5>
-                            <p>Whether PDF, Docs or any format, worry less about export.</p>
+                            <p>With xlsx, xlx formats, worry less about export.</p>
                         </div>
                         <div class="vertical-row"></div>
 
@@ -79,7 +94,7 @@
                             <div class="img-bg"></div>
                         </div>
                         <div class="div2">
-                            <h5>Spot duplicates,errors & more at a glance.</h5>
+                            <h5>Spot duplicates & differences at a glance.</h5>
                             <p>All those monotonous files that take endless hours are now streamlined on your predefined rules. </p>
                         </div>
                         <div class="vertical-row"></div>
@@ -114,7 +129,7 @@
                     <tr>
                         <td class="left"><img src="{% static 'img/unauthimg/upload.png' %}" alt=""></td>
                         <td><p class="heading">Upload</p>
-                        <p class="third-text">Upload the two excel files to be compared separately and select the   required sheet </p></td>
+                        <p class="third-text">Upload the two excel files to be compared separately. </p></td>
                     </tr>
                     <tr>
                         <td class="left"><img src="{% static 'img/unauthimg/criteria.png' %}" alt=""></td>
@@ -130,8 +145,8 @@
                     </tr>
                     <tr>
                         <td class="left"><img src="{% static 'img/unauthimg/duration.png' %}" alt=""></td>
-                        <td><p class="heading">Duration</p>
-                        <p class="third-text">Files will be  deleted from our servers after 24 HOURS and download links would stop working</p>
+                        <td><p class="heading">Download</p>
+                        <p class="third-text">Edited files are made available for download</p>
                         </td>
                     </tr>
                     <tr>
@@ -154,7 +169,7 @@
                     <table class="fourth-table">
                         <tr>
                             <td class="left"><img src="{% static 'img/unauthimg/upload2.png' %}" alt=""></td>
-                            <td>1. Uploading of files through Google  Drive and Dropbox.</td>
+                            <td>1. Uploading of files.</td>
                         </tr>
                         <tr>
                             <td class="left"><img src="{% static 'img/unauthimg/highlight.png' %}" alt=""></td>

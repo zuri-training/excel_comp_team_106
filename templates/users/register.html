@@ -32,22 +32,28 @@
         </button>
         <p class="or">Or</p>
         <form novalidate>
+          <label class="reg-text" for="username">Username</label>
+          {{ form.username }}
+          {% csrf_token %}
+          <small class="error" aria-live="polite"></small>
           <label class="reg-text" for="fname">First Name</label>
           {{ form.first_name }}
+          {% csrf_token %}
           <small class="error" aria-live="polite"></small>
           <label class="reg-text" for="lname">Last Name</label>
           {{ form.last_name }}
-          <label class="reg-text" for="username">Username</label>
-          {{ form.username }}
-          <small class="error" aria-live="polite"></small>
+          {% csrf_token %}
           <label class="reg-text" for="email">Email Address</label>
           {{ form.email }}
+          {% csrf_token %}
           <small class="error" aria-live="polite"></small>
           <label class="reg-text" for="password">Password</label>
           {{ form.password1 }}
           {{ form.errors.password }}
+          {% csrf_token %}
           <label class="reg-text" for="password">Confirm Password</label>
           {{ form.password2 }}
+          {% csrf_token %}
           <button class="signin-btn">Sign up</button>
 
           <p class="reg-text">
