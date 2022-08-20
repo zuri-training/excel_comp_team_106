@@ -90,6 +90,17 @@
             line-height: 24px;
         }
 
+        .info {
+            color: green;
+            font-weight: 160;
+        }
+
+        .topic {
+            color: #003DB1;
+            text-align: center;
+
+        }
+
         .nav-btn button {
             font-family: 'Space Grotesk', sans-serif;
             font-weight: 400;
@@ -230,6 +241,16 @@
             margin-top: 5px;
             background-color: #f5f5f5;
         }
+
+        .down {
+            width: 620px;
+            height: 220px;
+            overflow: scroll;
+            position: relative;
+            margin-top: 46px;
+            
+        }
+
         .bottom {
             display: flex;
             justify-content: center;
@@ -286,8 +307,13 @@
             display: flex;
             flex-direction: column;
             font-family: 'Space Grotesk';
-            margin-left: 50px;
-            margin-top: 70px;
+            margin-left: 33%;
+            margin-top: 60px;
+    
+        }
+
+        .lead {
+            color: #003DB2;
         }
 
         .footer-top li a {
@@ -333,7 +359,7 @@
                 </div>
                 <figure>
                     <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} "/>
-                    <figcaption><bold>{{ user.username }}</bold></figcaption>
+                    <figcaption><h5>{{ user.username }}</h5></figcaption>
                   </figure>
                 
                 
@@ -349,7 +375,7 @@
                         <div class="first-box">
                             <div class="filename">
                                 <p class="p">
-                                    File</p>
+                                    Original</p>
 
                                 <img src="{% static 'img/picss/x.png' %}" alt="x" class="filename-img">
                             </div>
@@ -374,10 +400,12 @@
 
                             
                             
-                            <div class="duplicates">
-                                <p><bold>Duplicates&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ sim }}</bold></p>
-
-                                <p><bold>Differences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ diff }}</bold></p>
+                            <div class="down">
+                                <h4 class="topic">Compare Analysis</h4>
+                                <hr>
+                                {% for ab in analysis %}
+                                <li class="info"><h6>{{ ab }}</h6></li>
+                                {% endfor %}
 
                             </div>
                             
@@ -390,7 +418,7 @@
                             <div class="right-topbox">
                                 <div class="filename">
                                     <p class="p">
-                                        File</p>
+                                        Review</p>
 
                                     <img src="{% static 'img/picss/x.png' %}" alt="x" class="filename-img">
                                 </div>
@@ -417,18 +445,25 @@
                                 </div>
 
                             </div>
+                            
+                            <div class="duplicates">
+                                <h5>Duplicates Found&nbsp;&nbsp;&nbsp; <bold class="lead">{{ sim }}</bold></h5>
+
+                                <h5>Differences Found&nbsp;&nbsp;&nbsp; <bold class="lead">{{ diff }}</bold></h5>
+
+                            </div>
                             <form method="post" >
+                                {% csrf_token %}
                                <div class="download-one">
                                   <button id="download" name="down" value="download" download>download 1</button>
-                                  {% csrf_token %}
+                                  
                                </div>
                                <div class="download-one">
                                   <button id="download" name="down" value="download2" download>download 2</button>
-                                  {% csrf_token %}
+                                  
                                 </div>
                                 
                             </form>
-
                         </div>
 
 

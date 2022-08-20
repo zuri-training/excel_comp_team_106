@@ -14,6 +14,7 @@ def download(request):
     name2 = request.session.get('came')
     C = request.session.get('stay')
     D = request.session.get ('hay')
+    g = request.session.get('ana')
     number = request.session.get ('num')
     diff, sim = number
 
@@ -35,7 +36,7 @@ def download(request):
                     response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
                 return response
     
-    return render(request, "dash/result.html", {"first":C, "second":D, "diff":diff,"sim":sim})
+    return render(request, "dash/result.html", {"first":C, "second":D, "analysis":g, "diff":diff,"sim":sim})
 
 @login_required
 def result_view(request):
@@ -65,9 +66,9 @@ def result_view(request):
                 a.append(m)
                 b.append(n)
             for m,n in zip(range(len(a)),range(len(b))):
-                if a[m] == b[n]:
-                    z.append(a[m])
                 if a[m] != b[n]:
+                    z.append(a[m])
+                if a[m] == b[n]:
                     f.append(a[m])
                 
         number = len(z), len(f)
@@ -85,6 +86,18 @@ def result_view(request):
 
             C = A.to_html(index=False)
             D = B.to_html(index=False)
+
+            z=[]
+            for i, j in zip(fileA,fileB):
+                 a,b = 0,0
+                 a,b = [],[]
+                 for m,n in zip(fileA[i],fileB[j]):
+                    a.append(m)
+                    b.append(n)
+                 for m,n in zip(range(len(a)),range(len(b))):
+                    if a[m] != b[n]:
+                        z.append("Value in Column: {}, Row: {}, was changed from {} to {}".format(i,m,a[m],b[n]))
+            g = z
             
             A.to_excel('media/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
             B.to_excel('media/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
@@ -93,6 +106,7 @@ def result_view(request):
             request.session['came'] = name2
             request.session['stay'] = C
             request.session['hay'] = D
+            request.session['ana'] = g
 
             return redirect("result")
 
@@ -105,32 +119,58 @@ def result_view(request):
             A = comp_code.color(A)
             C = A.to_html(index=False)
 
+            z=[]
+            for i, j in zip(fileA,fileB):
+                 a,b = 0,0
+                 a,b = [],[]
+                 for m,n in zip(fileA[i],fileB[j]):
+                    a.append(m)
+                    b.append(n)
+                 for m,n in zip(range(len(a)),range(len(b))):
+                    if a[m] != b[n]:
+                        z.append("Value in Column: {}, Row: {}, was changed from {}".format(i,m,a[m]))
+            g = z
+
             A.to_excel('media/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
             
             request.session['game'] = name
             request.session['stay'] = C
+            request.session['ana'] = g
 
             return redirect("result")
 
         elif action == "remove":
             fileA,fileB = comp_code.rem(fileA,fileB),comp_code.rem(fileII,fileI)
         
-            A = fileA.style.applymap(comp_code.highlight_cells)
-            B = fileB.style.applymap(comp_code.highlight_cells)
+            A = fileA.style.applymap(comp_code.remove_cells)
+            B = fileB.style.applymap(comp_code.remove_cells)
 
             A = comp_code.color(A)
             B = comp_code.color(B)
     
             C = A.to_html(index=False)
             D = B.to_html(index=False)
+
+            z=[]
+            for i, j in zip(fileA,fileB):
+                 a,b = 0,0
+                 a,b = [],[]
+                 for m,n in zip(fileA[i],fileB[j]):
+                    a.append(m)
+                    b.append(n)
+                 for m,n in zip(range(len(a)),range(len(b))):
+                    if a[m] != b[n]:
+                        z.append("Value in Column: {}, Row: {}, was changed from {} to {}".format(i,m,a[m],b[n]))
+            g = z
             
-            A.to_excel('media/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
-            B.to_excel('media/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
+            fileA.to_excel('media/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
+            fileB.to_excel('media/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
 
             request.session['game'] = name
             request.session['came'] = name2
             request.session['stay'] = C
             request.session['hay'] = D
+            request.session['ana'] = g
 
             return redirect("result")
 

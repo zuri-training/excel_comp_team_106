@@ -22,7 +22,7 @@ def rem(sheet1,sheet2):
             #loop over them to get a list of tuples from the zipped values
             for item in zip(rows,cols):
                 #assigning a empty value each row by iloc
-                sheet1.iloc[item[0],item[1]] = '*{}'.format("")
+                sheet1.iloc[item[0],item[1]] = '{}'.format("")
             #return edited dataframe
             return sheet1  
         else:
@@ -34,7 +34,7 @@ def rem(sheet1,sheet2):
                 comparison_values =sheet1.values == sheet2.values
                 rows,cols = np.where(comparison_values == True)
                 for item in zip(rows,cols):
-                    sheet1.iloc[item[0],item[1]] = '*{}'.format('')
+                    sheet1.iloc[item[0],item[1]] = '{}'.format('')
                 return sheet1
             elif d>c :
                 w= range(c,d)
@@ -43,7 +43,7 @@ def rem(sheet1,sheet2):
                 comparison_values =sheet1.values == sheet2.values
                 rows,cols = np.where(comparison_values == True)
                 for item in zip(rows,cols):
-                    sheet1.iloc[item[0],item[1]] = '*{}'.format('')
+                    sheet1.iloc[item[0],item[1]] = '{}'.format('')
                 sheet1 = sheet1.drop(w)
                 return sheet1
 
@@ -66,7 +66,7 @@ def high(sheet1,sheet2,flag):
                 #loop over them to get a list of tuples from the packed values after zipping
                 for item in zip(rows,cols):
                     #assigning 2 differerence values from both sheets showing mismatch
-                    sheet1.iloc[item[0],item[1]] = '*{} >>> {}'.format(sheet1.iloc[item[0],item[1]],
+                    sheet1.iloc[item[0],item[1]] = '*{} >> {}'.format(sheet1.iloc[item[0],item[1]],
                                                                        sheet2.iloc[item[0],item[1]])
                 #return edited dataframe
                 return sheet1
@@ -84,7 +84,7 @@ def high(sheet1,sheet2,flag):
                 rows,cols = np.where(comparison_values == False)
                 if flag == 'merge':
                     for item in zip(rows,cols):
-                        sheet1.iloc[item[0],item[1]] = '*{} >>> {}'.format(sheet1.iloc[item[0],item[1]],
+                        sheet1.iloc[item[0],item[1]] = '*{} >> {}'.format(sheet1.iloc[item[0],item[1]],
                                                                        sheet2.iloc[item[0],item[1]])
                     return sheet1
                 else:
@@ -99,7 +99,7 @@ def high(sheet1,sheet2,flag):
                 rows,cols = np.where(comparison_values == False)
                 if flag == 'merge':
                     for item in zip(rows,cols):
-                        sheet1.iloc[item[0],item[1]] = '*{} >>> {}'.format(sheet1.iloc[item[0],item[1]],
+                        sheet1.iloc[item[0],item[1]] = '*{} >> {}'.format(sheet1.iloc[item[0],item[1]],
                                                                        sheet2.iloc[item[0],item[1]])
                     return sheet1
                 else:
@@ -120,5 +120,10 @@ def color(s):
 
 def highlight_cells(val):
     pat = str(val)
-    color = 'cyan' if pat[0] == '*' else ''
+    color = 'cyan' if pat[0] == '*' else 'whitesmoke'
+    return 'background-color: {}'.format(color)
+
+def remove_cells(val):
+    #pat = str(val)
+    color = 'cyan' if val != '' else 'whitesmoke'
     return 'background-color: {}'.format(color)
