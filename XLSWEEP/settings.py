@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3g-4&=3a6&6e1^&g4d8rg1hnn0sl8pum@6ivx(ns#!y$59z80&'
+SECRET_KEY = env.str("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
@@ -148,7 +148,7 @@ LOGIN_URL = 'login'
 # the section below enables secret keys and information to be stored as environment variables
 # this prevents any secret leaks
 
-SECRET_KEY = str(os.getenv('SECRET_KEY'))
+
 
 # social auth configs for github
 SOCIAL_AUTH_GITHUB_KEY = str(os.getenv('GITHUB_KEY'))
