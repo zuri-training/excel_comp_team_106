@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
 </head>
@@ -428,6 +429,7 @@ bottom: 58px;
             <div class="nav-links">
                 <a class = "buton" href="{% url 'login' %}">Sign In</a>
                 <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
+                <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} "/>
             </div>
         </nav>
     </header>

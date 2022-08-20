@@ -11,7 +11,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
     </head>
 
 
@@ -270,11 +271,11 @@
         #download {
             margin-left: 170px;
             width: 254px;
-            height: 38px;
+            height: 45px;
             border-radius: 8px;
             border: none;
             background-color: #003DB2;
-            margin-top: 20px;
+            margin-top: 25px;
             font-family: 'Space Grotesk';
             color: whitesmoke;
         }
@@ -313,6 +314,7 @@
     <body>
         <header>
             <nav id="navbar">
+                
                 <div id="xl-sweep-logo">
                     <div id="xl-logo">
                         <div class="green-logo">
@@ -321,13 +323,20 @@
                         <div class="blue-logo">
                             <img class="logo" src=" {% static 'img/picss/Vector-1.png' %}" class="vectorblue" alt="">
                         </div>
+                        
                     </div>
                     <div class="sweep">
                         <h2>XL SWEEP</h2>
-
+                        
                     </div>
+                    
                 </div>
-
+                <figure>
+                    <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} "/>
+                    <figcaption><bold>{{ user.username }}</bold></figcaption>
+                  </figure>
+                
+                
             </nav>
         </header>
 
@@ -340,7 +349,7 @@
                         <div class="first-box">
                             <div class="filename">
                                 <p class="p">
-                                    Filename 2015csv.</p>
+                                    File</p>
 
                                 <img src="{% static 'img/picss/x.png' %}" alt="x" class="filename-img">
                             </div>
@@ -381,7 +390,7 @@
                             <div class="right-topbox">
                                 <div class="filename">
                                     <p class="p">
-                                        Filename 2015csv.</p>
+                                        File</p>
 
                                     <img src="{% static 'img/picss/x.png' %}" alt="x" class="filename-img">
                                 </div>

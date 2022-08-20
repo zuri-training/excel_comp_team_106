@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>After Upload</title>
         <link rel="stylesheet" href="{% static 'css/after.css' %}">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="{% static 'js/footer.js' %}"></script>
     </head>
 
@@ -36,13 +36,15 @@
                     </li>
                 </ul>
                 <div class="nav-btn">
-                    <a class="buton" href="{% url 'login' %}">
-                        <button class="sign-up">Sign In</button>
-                    </a>
-                    <a class="buton" href="{% url 'Accounts-register' %}">
-                        <button class="sign-up">Sign Up</button>
-                    </a>
+                    <a class="buton" href="{% url 'login' %}" class="nav-item nav-link">Sign In</a>
+                    <a class = "buton" href="profile/" class="nav-item nav-link">Profile</a>
+                    <a class = "buton" href="logout/" class="nav-item nav-link">Logout</a>
+                    
                 </div>
+                <figure>
+                    <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} "/>
+                    <figcaption><bold>{{ user.username }}</bold></figcaption>
+                  </figure>
             </nav>
         </div>
 
@@ -229,7 +231,7 @@
                     <img src="{% static 'img/comp/upload.svg' %}" alt="">
                     <div class="uptext">
                         <b>Upload</b>
-                        <p>Upload the two excel files to be compared seperately and select the required sheet.</p>
+                        <p>Uploaded files must be excel files! Compare seperately and get the required results.</p>
                     </div>
                 </div>
                 <div class="criteria">

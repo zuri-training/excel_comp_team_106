@@ -1,0 +1,1 @@
+web: gunicorn XLSWEEP.wsgi --log-file -

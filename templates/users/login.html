@@ -33,19 +33,20 @@
           </button>
           <p class="or">Or</p>
           <form novalidate method="post">
+            {% csrf_token %}
             <div class="flex-form">
             <label class="reg-text" for="email">Username</label>
             {{ form.username }} 
-            {% csrf_token %}
+            
             <small class="error" aria-live="polite"></small>
             <label class="reg-text" for="password">Password</label>
             {{ form.password }}
-            {% csrf_token %}
+          
             <a class="reg-text fgt">Forgot your Password?</a>
             <small class="error" aria-live="polite"></small>
             <label class="reg-text" for="Remember me">Remember me</label>
             {{ form.remember_me }}
-            {% csrf_token %}
+            
             <button class="signin-btn">Sign in</button>
 
             <p class="sign-link">Don't have an account? <a href="{% url 'Accounts-register' %}">Sign up</a></p>
