@@ -35,16 +35,15 @@
                         <a href="{% url 'contact' %}" class="contact">Contact</a>
                     </li>
                 </ul>
+                
                 <div class="nav-btn">
-                    <a class="buton" href="{% url 'login' %}" class="nav-item nav-link">Sign In</a>
-                    <a class = "buton" href="profile/" class="nav-item nav-link">Profile</a>
-                    <a class = "buton" href="logout/" class="nav-item nav-link">Logout</a>
                     
-                </div>
-                <figure>
+                    <a class = "buton" href="{% url 'Accounts-profile' %}" class="nav-item nav-link">Profile</a>
+                    <a class = "buton" href="{% url 'logout' %}" class="nav-item nav-link">Logout</a>
                     <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} "/>
-                    <figcaption><bold>{{ user.username }}</bold></figcaption>
-                  </figure>
+                
+                </div>
+                
             </nav>
         </div>
 
@@ -52,7 +51,7 @@
             <h1 class="main1">Compare Excel files
                 <span class="online">Online</span>
             </h1>
-            <p class="main2">Use our comparison software to highlight, compare and duplicate your files</p>
+            <p class="main2">Use our comparison software to highlight and compare your files</p>
         </div>
 
         <!--START OF THE FORM-->
@@ -67,7 +66,7 @@
                             d="M23.04 4.18537H12.27L8.751 0.0804877C8.70623 0.0293698 8.64733 0.000641329 8.586 0H0.96C0.429 0 0 0.523171 0 1.17073V22.8293C0 23.4768 0.429 24 0.96 24H23.04C23.571 24 24 23.4768 24 22.8293V5.3561C24 4.70854 23.571 4.18537 23.04 4.18537ZM15.6 14.378C15.6 14.5171 15.498 14.6341 15.375 14.6341H12.84V17.7402C12.84 17.8829 12.744 18 12.63 18H11.37C11.256 18 11.16 17.8829 11.16 17.7402V14.6341H8.625C8.502 14.6341 8.4 14.5171 8.4 14.378V12.8415C8.4 12.7024 8.502 12.5854 8.625 12.5854H11.16V9.47927C11.16 9.33659 11.256 9.21951 11.37 9.21951H12.63C12.744 9.21951 12.84 9.33659 12.84 9.47927V12.5854H15.375C15.498 12.5854 15.6 12.7024 15.6 12.8415V14.378Z"
                             fill="black" />
                     </svg>
-                    <p class="bookeep1">Spreadsheet A</p>
+                    <p class="bookeep1">Spreadsheet A (Original)</p>
                 </div>
                 <div class="fileframe">
                     <div class="cancel"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -91,7 +90,7 @@
                     
                             <div class="font">
                                 {% csrf_token %}
-                                <input type="file" name="file_one" name="drop-down" id = "drop-down" >
+                                <input type="file" name="file_one" class ="drop-down" id = "drop-down" >
                                 <!--<option value="Sheet1">
                                     Sheet 1
                                 </option>
@@ -111,7 +110,7 @@
                             d="M23.04 4.18537H12.27L8.751 0.0804877C8.70623 0.0293698 8.64733 0.000641329 8.586 0H0.96C0.429 0 0 0.523171 0 1.17073V22.8293C0 23.4768 0.429 24 0.96 24H23.04C23.571 24 24 23.4768 24 22.8293V5.3561C24 4.70854 23.571 4.18537 23.04 4.18537ZM15.6 14.378C15.6 14.5171 15.498 14.6341 15.375 14.6341H12.84V17.7402C12.84 17.8829 12.744 18 12.63 18H11.37C11.256 18 11.16 17.8829 11.16 17.7402V14.6341H8.625C8.502 14.6341 8.4 14.5171 8.4 14.378V12.8415C8.4 12.7024 8.502 12.5854 8.625 12.5854H11.16V9.47927C11.16 9.33659 11.256 9.21951 11.37 9.21951H12.63C12.744 9.21951 12.84 9.33659 12.84 9.47927V12.5854H15.375C15.498 12.5854 15.6 12.7024 15.6 12.8415V14.378Z"
                             fill="black" />
                     </svg>
-                    <p class="bookeep1">Spreadsheet B</p>
+                    <p class="bookeep1">Spreadsheet B (Review)</p>
                 </div>
                 <div class="fileframe">
                     <div class="cancel"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -135,7 +134,7 @@
                         
                             <div class="font">
                                 {% csrf_token %}
-                                <input type="file" name="file_two" value = "sheet2" name="drop-down" id="drop-down">
+                                <input type="file" name="file_two" value = "sheet2" class ="drop-down" id="drop-down">
                                 <!--<option value="Sheet1">
                                     Sheet 1
                                 </option>
