@@ -1,86 +1,76 @@
-{% extends "users/base.html" %}
-{% block title %} Register Page {% endblock title%}
-{% block content %}
-    <div class="form-content my-3 p-3">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card shadow-lg border-0 rounded-lg mt-0 mb-5">
-                        <div class="card-header justify-content-center">
-                            <h3 class="font-weight-light my-4 text-center">Register Here</h3>
-                        </div>
-                        <div class="card-body">
-                            <form method="POST">
-                                {% csrf_token %}
-                                {% if form.errors %}
-                                    <div class="alert alert-danger alert-dismissible" role="alert">
-                                        <div id="form_errors">
-                                            {% for key, value in form.errors.items %}
-                                                <strong>{{ value }}</strong>
-                                            {% endfor %}
-                                        </div>
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                {% endif %}
-                                <div class="form-row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="small mb-1">First Name</label>
-                                            {{ form.first_name }}
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="small mb-1">Last Name</label>
-                                            {{ form.last_name }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="small mb-1">Username</label>
-                                            {{ form.username }}
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="small mb-1">Email</label>
-                                            {{ form.email }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="small mb-1">Password</label>
-                                            {{ form.password1 }}
-                                            {{ form.errors.password }}
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
+<!DOCTYPE html>
 
-                                        <div class="form-group">
-                                            <label class="small mb-1">Confirm Password</label>
-                                            {{ form.password2 }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group mt-4 mb-0">
-                                    <button type="submit" class="col-md-12 btn btn-dark">Sign Up</button><br><br>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="card-footer text-center">
-                            <div class="small">
-                                <a href="{% url 'login' %}">Already Registered? Sign in Here</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<html>
+  <head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" media="screen" />
+    <link rel="stylesheet" href="{% static 'css/sign-in.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/sign-up.css' %}" />
+  </head>
+  <body>
+    <!-- <main> -->
+    <div class="body-left">
+      <img class="logo" src="{% static 'img/XL SWEEP LOGO.svg' %}" />
+      <p class="left-text top">With the help of our user friendly tool</p>
+      <p class="left-text bottom">Compare Excel Files Online with ease</p>
+     <div class="comp">
+        <img class=".compare" src="{% static 'img/XLS FILES COMPARE.svg' %}" /></div>
+      </div>
     </div>
-{% endblock content %}
+    <div class="body-right">
+      <div class="body-right-content">
+        <h2 class="form-head">Sign up</h2>
+        <p class="free-text">It's free and will always be free</p>
+        
+        <form novalidate>
+          {% csrf_token %}
+          
+          <label class="reg-text" for="username">Username</label>
+          {{ form.username }}
+          
+          <small class="error" aria-live="polite"></small>
+          <label class="reg-text" for="fname">First Name</label>
+          {{ form.first_name }}
+          
+          <small class="error" aria-live="polite"></small>
+          <label class="reg-text" for="lname">Last Name</label>
+          {{ form.last_name }}
+        
+          <label class="reg-text" for="email">Email Address</label>
+          {{ form.email }}
+          <small class="error" aria-live="polite"></small>
+          <label class="reg-text" for="password">Password</label>
+          {{ form.password1 }}
+          {{ form.errors.password }}
+          
+          <label class="reg-text" for="password">Confirm Password</label>
+          {{ form.password2 }}
+          
+          <button class="signin-btn">Sign up</button>
+
+          <p class="reg-text">
+            By creating an account, you agree to our terms of use and privacy
+            policy
+          </p>
+
+          <p class="sign-link">
+            Already have an account ? <a href="{% url 'login' %}">Sign in</a>
+          </p>
+        </form>
+        <footer class="footer">
+          <p class="copyright">XL Sweep 2022. All rights reserved &nbsp;|</p>
+          <p>Terms &amp; Conditions &nbsp;|</p>
+          <p><a href="{% url 'privacypolicy' %}"> Privacy Policy </a></p>
+        </footer>
+      </div>
+    </div>
+    <!-- </main> -->
+
+    <script src="{% static 'js/sign.js' %}" async defer></script>
+  </body>
+</html>
