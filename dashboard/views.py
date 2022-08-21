@@ -99,8 +99,8 @@ def result_view(request):
                         z.append("Value in Column: {}, Row: {}, was changed from {} to {}".format(i,m,a[m],b[n]))
             g = z
             
-            A.to_excel('media/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
-            B.to_excel('media/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
+            A.to_excel('settings.MEDIA_ROOT/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
+            B.to_excel('settings.MEDIA_ROOT/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
 
             request.session['game'] = name
             request.session['came'] = name2
@@ -131,11 +131,11 @@ def result_view(request):
                         z.append("Value in Column: {}, Row: {}, was changed from {}".format(i,m,a[m]))
             g = z
 
-            A.to_excel('media/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
+            A.to_excel('settings.MEDIA_ROOT/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
             
             request.session['game'] = name
             request.session['stay'] = C
-            request.session['ana'] = g
+            request.session['ana'] = g 
 
             return redirect("result")
 
@@ -163,8 +163,8 @@ def result_view(request):
                         z.append("Value in Column: {}, Row: {}, was changed from {} to {}".format(i,m,a[m],b[n]))
             g = z
             
-            fileA.to_excel('media/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
-            fileB.to_excel('media/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
+            fileA.to_excel('settings.MEDIA_ROOT/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
+            fileB.to_excel('settings.MEDIA_ROOT/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
 
             request.session['game'] = name
             request.session['came'] = name2
