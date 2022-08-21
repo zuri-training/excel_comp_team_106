@@ -532,7 +532,7 @@ margin-left: 50px;
             <div class="nav-btn">
                 <a class = "buton" href="{% url 'login' %}">Sign In</a>
                 <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
-                <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} "/>
+                <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
                 <!--<button class="sign-in">Sign In</button>
                 <button class="sign-up">Sign Up</button>-->
             </div>

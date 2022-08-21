@@ -38,9 +38,9 @@
                 
                 <div class="nav-btn">
                     
-                    <a class = "buton" href="{% url 'Accounts-profile' %}" class="nav-item nav-link">Profile</a>
+                    <!--<a class = "buton" href="{% url 'Accounts-profile' %}" class="nav-item nav-link">Profile</a>-->
                     <a class = "buton" href="{% url 'logout' %}" class="nav-item nav-link">Logout</a>
-                    <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} "/>
+                    <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
                 
                 </div>
                 

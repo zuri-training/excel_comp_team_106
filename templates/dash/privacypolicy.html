@@ -410,7 +410,7 @@ top: 3px;
             <div class="nav-links">
                 <a class = "buton" href="{% url 'login' %}" role=>Sign In</a>
                 <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
-                <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} "/>
+                <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
             </div>
         </nav>
     </header>
