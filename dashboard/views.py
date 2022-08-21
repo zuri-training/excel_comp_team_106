@@ -1,7 +1,11 @@
+import os
 from django.shortcuts import render,redirect
+from django.conf import settings
+from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 import pandas as pd
 from dashboard import comp_code
+
 
 @login_required
 def download(request):
@@ -15,23 +19,23 @@ def download(request):
     number = request.session.get ('num')
     diff, sim = number
 
-    #if request.method == 'POST':
-    #    dat = request.POST
-    #    action = dat.get("down")
-    #    if action == "download":
-    #        file_path = os.path.join(settings.MEDIA_ROOT, name)
-    #        if os.path.exists(file_path):
-    #            with open(file_path, 'rb') as fh:
-    #                response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
-    #                response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
-    #            return response
-    #    if action == "download2":
-    #        file_path = os.path.join(settings.MEDIA_ROOT, name2)
-    #        if os.path.exists(file_path):
-    #            with open(file_path, 'rb') as fh:
-    #                response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
-    #                response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
-    #            return response
+    if request.method == 'POST':
+        dat = request.POST
+        action = dat.get("down")
+        if action == "download":
+            file_path = os.path.join(settings.MEDIA_ROOT, name)
+            if os.path.exists(file_path):
+                with open(file_path, 'rb') as fh:
+                    response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
+                    response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
+                return response
+        if action == "download2":
+            file_path = os.path.join(settings.MEDIA_ROOT, name2)
+            if os.path.exists(file_path):
+                with open(file_path, 'rb') as fh:
+                    response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
+                    response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
+                return response
     
     return render(request, "dash/result.html", {"first":C, "second":D, "analysis":g, "diff":diff,"sim":sim})
 
@@ -96,8 +100,8 @@ def result_view(request):
                         z.append("Value in Column: {}, Row: {}, was changed from {} to {}".format(i,m,a[m],b[n]))
             g = z
             
-            #A.to_excel('XLSWEEP.settings.MEDIA_ROOT/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
-            #B.to_excel('XLSWEEP.settings.MEDIA_ROOT/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
+            A.to_excel('settings.MEDIA_ROOT/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
+            B.to_excel('settings.MEDIA_ROOT/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
 
             request.session['game'] = name
             request.session['came'] = name2
