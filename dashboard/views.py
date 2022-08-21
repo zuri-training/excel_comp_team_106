@@ -168,9 +168,9 @@ def result_view(request):
             g = z
             
             file_pathA = os.path.join(settings.MEDIA_ROOT, name)
-            A.to_excel(file_pathA,index = False, header = True, engine = 'openpyxl')
+            fileA.to_excel(file_pathA,index = False, header = True, engine = 'openpyxl')
             file_pathB = os.path.join(settings.MEDIA_ROOT, name2)
-            B.to_excel(file_pathB,index = False, header = True, engine = 'openpyxl')
+            fileB.to_excel(file_pathB,index = False, header = True, engine = 'openpyxl')
 
             request.session['game'] = name
             request.session['came'] = name2
