@@ -37,7 +37,7 @@ def download(request):
                     response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
                 return response
     
-    return render(request, "dash/result.html", {"first":C, "second":D, "analysis":g, "diff":diff,"sim":sim})
+    return render(request, "dash/result.html", {"first":C, "second":D, "analysis":g, "diff":diff,"sim":sim, "name1":name,"name2":name2})
 
 @login_required
 def result_view(request):
@@ -51,8 +51,8 @@ def result_view(request):
         action = data.get("criteria")
         compare = data.get("compare")
 
-        name = 'excel/comp_{}'.format(file1)
-        name2 = 'excel/comp_{}'.format(file2)
+        name = '{}'.format(file1)
+        name2 = '{}'.format(file2)
 
         fileA = pd.read_excel(file1)
         fileB = pd.read_excel(file2)
@@ -97,11 +97,10 @@ def result_view(request):
                     b.append(n)
                  for m,n in zip(range(len(a)),range(len(b))):
                     if a[m] != b[n]:
-                        z.append("Value in Column: {}, Row: {}, was changed from {} to {}".format(i,m,a[m],b[n]))
+                        z.append("Value in {};  Column: {}, Row: {}, was changed from {} to {}".format(name,i,m,a[m],b[n]))
             g = z
 
             file_pathA = os.path.join(settings.MEDIA_ROOT, name)
-            #if os.path.exists(file_pathA):
             A.to_excel(file_pathA,index = False, header = True, engine = 'openpyxl')
             file_pathB = os.path.join(settings.MEDIA_ROOT, name2)
             B.to_excel(file_pathB,index = False, header = True, engine = 'openpyxl')
@@ -132,11 +131,12 @@ def result_view(request):
                     b.append(n)
                  for m,n in zip(range(len(a)),range(len(b))):
                     if a[m] != b[n]:
-                        z.append("Value in Column: {}, Row: {}, was changed from {}".format(i,m,a[m]))
+                        z.append("Value in {};  Column: {}, Row: {}, was changed from {}".format(name,i,m,a[m]))
             g = z
 
-            A.to_excel('media/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
-            
+            file_pathA = os.path.join(settings.MEDIA_ROOT, name)
+            A.to_excel(file_pathA,index = False, header = True, engine = 'openpyxl')
+
             request.session['game'] = name
             request.session['stay'] = C
             request.session['ana'] = g 
@@ -164,11 +164,13 @@ def result_view(request):
                     b.append(n)
                  for m,n in zip(range(len(a)),range(len(b))):
                     if a[m] != b[n]:
-                        z.append("Value in Column: {}, Row: {}, was changed from {} to {}".format(i,m,a[m],b[n]))
+                        z.append("Value in {};  Column: {}, Row: {}, was changed from {} to {}".format(name,i,m,a[m],b[n]))
             g = z
             
-            fileA.to_excel('media/excel/comp_{}'.format(file1),index = False, header = True, engine = 'openpyxl')
-            fileB.to_excel('media/excel/comp_{}'.format(file2),index = False, header = True, engine = 'openpyxl')
+            file_pathA = os.path.join(settings.MEDIA_ROOT, name)
+            A.to_excel(file_pathA,index = False, header = True, engine = 'openpyxl')
+            file_pathB = os.path.join(settings.MEDIA_ROOT, name2)
+            B.to_excel(file_pathB,index = False, header = True, engine = 'openpyxl')
 
             request.session['game'] = name
             request.session['came'] = name2
