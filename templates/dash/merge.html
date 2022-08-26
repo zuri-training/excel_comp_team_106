@@ -279,6 +279,8 @@
             left: 100%;
             right: 20%;
             margin-top: 45px;
+            padding-right: 20%;
+            
             
     
         }
@@ -343,14 +345,37 @@
                 
             }
 
+            @media screen and (max-width:700px){
 
+                .duplicates{
+                    width: 30%;
+                }
+
+            }
+
+            
             @media screen and (max-width:550px){
                 footer, header{
                     width: 550px;
                 }
-                .down{
-                    width: fit-content;
+                .duplicates{
+                    width: 30%;
                 }
+                
+            }
+
+            @media screen and (max-width:350px){
+
+                #download{
+                    width: 100px;
+                    left: 20%;
+                }
+
+                .duplicates{
+                    margin-right: 10%;
+                }
+                    
+                
             }
 
 
@@ -440,25 +465,18 @@
         
                     <h5>Differences Found&nbsp;&nbsp;&nbsp; <bold class="lead">{{ diff }}</bold></h5>
                     
-                    <form method="post" >
-                        {% csrf_token %}
-                       <div class="download-one">
-                          <button id="download" name="down" value="download" download>download</button>
-                          
-                        </div>
-                       
                     
-                       
-                    </form>
                  </div>
-                 <div class="down">
-                    <h4 class="topic">Compare Analysis</h4>
-                    <hr>
-                    {% for ab in analysis %}
-                    <li class="info"><h6>{{ ab }}</h6></li>
-                    {% endfor %}
-    
-                </div>
+                 <form method="post" >
+                    {% csrf_token %}
+                   <div class="download-one">
+                      <button id="download" name="down" value="download" download>download</button>
+                      
+                    </div>
+                   
+                
+                   
+                </form>
             </div>
             
         </div>
@@ -484,11 +502,11 @@
             <hr>
             <div class="footer-bottom">
                 <ul>
-                    <li ><a href="{% url 'terms' %}" class="lit">Terms & Conditions |</a></li>
+                    <li ><a href="{% url 'terms' %}" class="lit">Terms & Conditions</a></li>
         
             
                  <li>
-                      <a href="{% url 'privacypolicy' %}" class="lit">Privacy Policy |</a>
+                      <a href="{% url 'privacypolicy' %}" class="lit">Privacy Policy</a>
                  </li>
              </ul>
              <p class="edge">XL Sweep 2022. All rights reserved.</p>
