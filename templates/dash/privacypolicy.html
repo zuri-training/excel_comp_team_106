@@ -63,7 +63,7 @@
 
     .green-logo {
         position: absolute;
-        top: -35%;
+        top: -15%;
         left: -6%;
     }
 
@@ -242,7 +242,8 @@ h1{
 
 
     body{
-       overflow-x: hidden;
+
+       align-items: center;
     }
 
     h1{
@@ -251,26 +252,26 @@ h1{
         position: relative;
         display: block;
         text-align: center;
-        right: 4px;
-      
         
+      
+      
        
 
     }
 
-    #navbar{
+     #navbar{
 
-width: 428px;
+     width: 100%;
 
     }
 
     .paragraph{
         font-size: 14px;
         text-align: justify;
-        width: 357px;
+        width: 100%;
         line-height: 18px;
        position: relative;
-       right: 69px;
+    
       
         
     }
@@ -298,9 +299,9 @@ width: 428px;
     }
 
 
-    .nav-links{
+    /*.nav-links{
         display: none;
-    }
+    }*/
 
     .nav-btn{
         display: none;
@@ -327,34 +328,38 @@ hr{
 
 
 .main{
-    overflow: hidden;
-    overflow-x: hidden;
+   
+    
     padding-bottom: 0;
     margin-top: none;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     padding: 0;
     text-align: center;
     align-items: center;
     align-content: center;
+    width: 100%;
 }
 
 footer{
     position: relative;
-    width: 428px;
+    width: 100%;
     padding: 0;
     height: 88px;
+   
     
 }
 .footer-bottom li a{
 
 font-size: 9px;
 position: relative;
-left: 172px;
+left: 172%;
 top: 3px;
+padding-left: 0.04%;
 }
 
 .footer-bottom{
-    justify-content: none;
+    justify-content: space-between;
+    
 }
 
 
@@ -363,7 +368,13 @@ top: 3px;
     margin-top: none;
 }
 
-
+.lefts{
+    
+    right: 30%;
+    top: 5px;
+    position: relative;
+  
+}
 
 
 .rights{
@@ -371,14 +382,16 @@ top: 3px;
     display: flex;
     margin-bottom: 0;
     position: relative;
-    right: 238px;
-    top: 5px;
+    right: 0px;
+    top: 27px;
   
 }
 
-
-
 }
+
+
+
+
 
  
 </style>
@@ -400,18 +413,23 @@ top: 3px;
                     <h2>XL SWEEP</h2>
                 </div>
             </div>
-            <div class="nav-links">
+            <!--<div class="nav-links">
                 <ul>
-                    <li><a href="{% url 'Accounts-home' %}" class="home">Home</a></li>
+                    <li class="side"><a href="{% url 'Accounts-home' %}" class="home">Home</a></li>
                     <li><a href="{% url 'about' %}" class= "about">About</a></li>
                     <li><a href="{% url 'contact' %}" class="contact">Contact</a></li>
                 </ul>
+            </div>-->
+            {% if user.is_authenticated %}
+            <div class="nav-links">
+                <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
             </div>
+            {% else %}
             <div class="nav-links">
                 <a class = "buton" href="{% url 'login' %}" role=>Sign In</a>
                 <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
-                <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
             </div>
+            {% endif %}
         </nav>
     </header>
 
@@ -644,9 +662,9 @@ top: 3px;
         <hr>
 
         <div class="footer-bottom">
-            <ul>
-                <li>Terms & Conditions</li>
-                <li><a href="{% url 'privacypolicy' %}">|&nbsp;Privacy Policy |</a></li>
+            <ul class="lefts">
+                <li><a href="{% url 'terms' %}">&nbsp;Terms & Conditions|</a></li>
+                <li><a href="{% url 'privacypolicy' %}">&nbsp;Privacy Policy </a></li>
             </ul>
 
             <p class="rights">XL Sweep 2022. All rights reserved.</p>

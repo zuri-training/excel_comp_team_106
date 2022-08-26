@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  /* min-height: 100vh;
+    max-height: 100vh; */
+}
+
+/* .container {
+    /* background-color: pink;
+    height: 600px;
+} */
+.terms-main {
+  display: grid;
+  grid-template-columns: 1fr 75% 1fr;
+}
+
+.terms-main > * {
+  grid-column: 2;
+  min-width: 0;
+}
+.top-heading {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 64px;
+  text-align: center;
+  color: #001847;
+}
+.terms-main p,
+h2,
+h3,
+ol,
+ul,
+li {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 36px;
+  margin: 5px;
+
+  color: #001847;
+}
+.terms-main h2
+ {
+  font-weight: 700;
+}
+

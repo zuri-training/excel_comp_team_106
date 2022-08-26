@@ -23,29 +23,30 @@
             </div>
         </header>
         <nav>
-            <ul>
+            
                 <div class="menu">
-                    <li>
+                    <!--<ul>
+                        <li>
                         <a href="{% url 'Accounts-home' %}" class="home">Home</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'about' %}" class="about">About</a>
-                    </li>
-                    <li>
+                      </li>
+                      <li>
+                          <a href="{% url 'about' %}" class="about">About</a>
+                      </li>
+                      <li>
                         <a href="{% url 'contact' %}" class="contact">Contact</a>
-                    </li>
-                </ul>
-                
+                      </li>
+                    </ul>-->
+            </div>
                 <div class="nav-btn">
                     
                     <!--<a class = "buton" href="{% url 'Accounts-profile' %}" class="nav-item nav-link">Profile</a>-->
-                    <a class = "buton" href="{% url 'logout' %}" class="nav-item nav-link">Logout</a>
+                    
                     <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
                 
                 </div>
                 
             </nav>
-        </div>
+        
 
         <div class="main-text">
             <h1 class="main1">Compare Excel files
@@ -70,11 +71,10 @@
                     <p class="bookeep1">Spreadsheet A (Original)</p>
                 </div>
                 <div class="fileframe">
-                    <div class="cancel"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    <div class="cancel">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.0032 15L27.2369 27.2337M2.76953 27.2337L15.0032 15L2.76953 27.2337ZM27.2369 2.76636L15.0009 15L27.2369 2.76636ZM15.0009 15L2.76953 2.76636L15.0009 15Z"
-                                stroke="#B3261E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                            
                         </svg>
                         <div class="outfra">
                             <div class="infra">
@@ -105,7 +105,8 @@
             </div>
     
             <div class="after">
-                <div class="bheader"><svg width="24" class="file" height="24" viewBox="0 0 24 24" fill="none"
+                <div class="bheader">
+                    <svg width="24" class="file" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M23.04 4.18537H12.27L8.751 0.0804877C8.70623 0.0293698 8.64733 0.000641329 8.586 0H0.96C0.429 0 0 0.523171 0 1.17073V22.8293C0 23.4768 0.429 24 0.96 24H23.04C23.571 24 24 23.4768 24 22.8293V5.3561C24 4.70854 23.571 4.18537 23.04 4.18537ZM15.6 14.378C15.6 14.5171 15.498 14.6341 15.375 14.6341H12.84V17.7402C12.84 17.8829 12.744 18 12.63 18H11.37C11.256 18 11.16 17.8829 11.16 17.7402V14.6341H8.625C8.502 14.6341 8.4 14.5171 8.4 14.378V12.8415C8.4 12.7024 8.502 12.5854 8.625 12.5854H11.16V9.47927C11.16 9.33659 11.256 9.21951 11.37 9.21951H12.63C12.744 9.21951 12.84 9.33659 12.84 9.47927V12.5854H15.375C15.498 12.5854 15.6 12.7024 15.6 12.8415V14.378Z"
@@ -114,17 +115,16 @@
                     <p class="bookeep1">Spreadsheet B (Review)</p>
                 </div>
                 <div class="fileframe">
-                    <div class="cancel"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                   <div class="cancel">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.0032 15L27.2369 27.2337M2.76953 27.2337L15.0032 15L2.76953 27.2337ZM27.2369 2.76636L15.0009 15L27.2369 2.76636ZM15.0009 15L2.76953 2.76636L15.0009 15Z"
-                                stroke="#B3261E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                            
                         </svg>
                         <div class="outfra">
                             <div class="infra">
                                 <div class="ininfra">
                                     <img src="{% static 'img/comp/Vector (2).svg' %}" alt="">
-                                    <p></p>
+                                    <span class="inbok"></span>
                                 </div>
                             </div>
                         </div>
@@ -298,9 +298,11 @@
             <hr>
             <div class="footer-bottom">
                 <ul>
-                    <li>Terms & Conditions |</li>
-                </a>
-            </li>
+                    <li>
+                        <a href="{% url 'terms' %}">Terms & Conditions |</a>
+                    </li>
+                
+            
             <li>
                 <a href="{% url 'privacypolicy' %}">Privacy Policy |</a>
             </li>

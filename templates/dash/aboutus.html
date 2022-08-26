@@ -68,7 +68,7 @@
 
     .green-logo {
         position: absolute;
-        top: -35%;
+        top: -15%;
         left: -6%;
     }
 
@@ -178,7 +178,7 @@ hr{
 
 
     .main{
-        overflow: auto;
+        
         padding-bottom: 100px;
     }
 
@@ -262,7 +262,7 @@ margin-top: 50px;
 
 #navbar{
 
-width: 428px;
+width: 100%;
 
 }
 
@@ -271,9 +271,9 @@ width: 428px;
 display: none;
 }
 
-.nav-btn{
+/*.nav-btn{
 display: none;
-}
+}*/
 
 .footer-top{
 display: none;
@@ -311,7 +311,7 @@ line-height: 24px;
     font-size: 14px;
     line-height: 20px;
     text-align: justify;
-    width: 428px;
+    width: 100%;
   
 
 }
@@ -336,8 +336,7 @@ hr{
 
 
 .main{
-    overflow: hidden;
-    overflow-x: hidden;
+    
     padding-bottom: none;
     margin-top: none;
     margin-left: 5px;
@@ -346,10 +345,12 @@ hr{
 
 footer{
     position: relative;
-    height: 80px;
-    width: 428px;
+    height: 100px;
+    width: 100%;
     padding: 50px;
     top: 147px;
+    min-width: fit-content;
+    min-height: fit-content;
     
 }
 
@@ -369,8 +370,8 @@ footer{
     display: flex;
     margin-bottom: 0;
     position: relative;
-    right: 278px;
-    bottom: 56px;
+    right: 1px;
+    bottom: 76px;
   
 }
 
@@ -390,8 +391,8 @@ display: none;
 
 font-size: 10px;
 position: relative;
-left: 117px;
-bottom: 58px;
+left: 0.3%;
+bottom: 78px;
 }
 
 
@@ -409,28 +410,37 @@ bottom: 58px;
             <div id="xl-sweep-logo">
                 <div id="xl-logo">
                     <div class="green-logo">
-                        <img class="logo" src="picss/Vector.png" class="vectorgreen" alt="">
+                        <img class="logo" src="{%static 'img/picss/Vector.png' %}" class="vectorgreen" alt="">
                     </div>
                     <div class="blue-logo">
-                        <img class="logo" src="picss/Vector-1.png" class="vectorblue" alt="">
+                        <img class="logo" src="{% static 'img/picss/Vector-1.png' %}" class="vectorblue" alt="">
                     </div>
                 </div>
                 <div class="sweep">
                     <h2>XL SWEEP</h2>
                 </div>
             </div>
-            <div class="nav-links">
+            <!--<div class="nav-links">
                 <ul>
-                    <li><a href="{% url 'Accounts-home' %}" class="home">Home</a></li>
-                    <li><a href="{% url 'about' %}" class= "about">About</a></li>
-                    <li><a href="{% url 'contact' %}" class="contact">Contact</a></li>
+                    <li><a href="{% url 'Accounts-home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
+            </div>-->
+            {% if user.is_authenticated %}
+            <div class="nav-btn">
+                <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
+                <!--<button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>-->
             </div>
-            <div class="nav-links">
+            {% else %}
+            <div class="nav-btn">
                 <a class = "buton" href="{% url 'login' %}">Sign In</a>
                 <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
-                <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
+                <!--<button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>-->
             </div>
+            {% endif %}
         </nav>
     </header>
     <main>
@@ -462,10 +472,10 @@ bottom: 58px;
             <div id="xl-logo">
                 <div class="footer-logo">
                 <div class="green-logo">
-                    <img class="logo" src="picss/Vector.png"     class="vectorgreen" alt="">
+                    <img class="logo" src="{% static 'img/picss/Vector.png' %}"     class="vectorgreen" alt="">
                 </div>
                 <div class="blue-logo">
-                    <img class="logo" src="picss/Vector-1.png"  class="vectorblue" alt="">
+                    <img class="logo" src="{% static 'img/picss/Vector-1.png' %}"  class="vectorblue" alt="">
                 </div>
             </div>
             
@@ -487,6 +497,7 @@ bottom: 58px;
 
         <div class="footer-bottom">
             <ul class="terms">
+                <li><a href="{% url 'terms' %}">Terms & Conditions |</a></li>
                 <li><a href="{% url 'privacypolicy' %}">Privacy Policy |</a></li>
             </ul>
             <p class="rights">XL Sweep 2022. All rights reserved.</p>

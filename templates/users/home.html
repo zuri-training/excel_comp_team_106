@@ -26,7 +26,7 @@
                 <div>
                     <!--<a class = "buton" href="profile/" class="nav-item nav-link">Profile</a>-->
                     <a class = "buton" href="logout/" class="nav-item nav-link">Logout</a>
-                    <a class = "buton" href="{% url 'login' %}">Sign In</a>
+                    
                     <!--<button class="login">Sign In</button>
                     <button class="{% url 'Accounts-register' %}">Sign Up</button>-->
                 </div>
@@ -39,6 +39,7 @@
                     </ul>
                 </div>
                   <div>
+                      <a class = "buton" href="{% url 'login' %}">Sign In</a>
                       <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
                       <!--<button class="login">Sign In</button>
                       <button class="{% url 'Accounts-register' %}">Sign Up</button>-->
@@ -272,8 +273,8 @@
 
             <div class="footer-tc">
                 <ul>
-                    <li class="tnc">Terms & Condition <span>|</span></li>
-                    <li class="pp"><a href="{% url 'privacypolicy' %}">Privacy Policy |</a></li>
+                    <li class="tnc"><a href="{% url 'terms' %}">Terms & Condition</a> <span>&nbsp;&nbsp;</span></li>
+                    <li class="pp"><a href="{% url 'privacypolicy' %}">Privacy Policy </a></li>
                 </ul>
 
                 <p>XL-SWEEP 2022. All rights reserved.</p>

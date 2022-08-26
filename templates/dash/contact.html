@@ -79,7 +79,7 @@
 
     .green-logo {
         position:absolute;
-        top: -35%;
+        top: -15%;
         left: -6%;
     }
 
@@ -166,10 +166,11 @@
     footer{
 background-color: #aac2f1;
 padding: 50px;
+min-width: 100%;
     }
 
 hr{
-    width: 97%;
+    width: 100%;
     margin: auto;
     border: 1px solid #00256B;
 }
@@ -195,11 +196,13 @@ hr{
     color: #001847;
     line-height: 18px;
     padding: 2rem 0.8rem;
+    width: 100%;
 }
 .footer-bottom ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    width: 22%;
 }
 .footer-bottom li a {
     text-decoration: none;
@@ -209,6 +212,7 @@ hr{
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
+    width: 100%;
 }
 .sweep {
     font-size: 20px;
@@ -227,7 +231,7 @@ hr{
 
 
     .main{
-        overflow: auto;
+       
         padding-bottom: 100px;
     }
 
@@ -333,43 +337,68 @@ display: block;
 
     font-family: 'Space Grotesk', sans-serif;
     font-size: 10px;
+    left: 20%;
 
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 990px) {
 
 
     body{
-       overflow-x: hidden;
+       overflow-x: auto;
        margin: 0;
        padding: 0;
+       align-items: center;
     }
 
     #navbar{
 
-width: 428px;
+width: 100%;
 
     }
 
     
-header{
+/*header{
 
-width: 428px;
+width: 100%;
 height: 24px;
 border-bottom: 1px solid #B3B3B4;
 
+}*/
+
+
+
+#xl-sweep-logo{
+display: flex;
+flex-direction: row;
+margin-right: 60px;
+margin-top: 40px;
 }
+
+.nav-btn{
+    
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.main{
+
+    max-width: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 
     
 .nav-links{
     display: none;
 }
 
-.nav-btn{
+/*.nav-btn{
 
     display: none;
-}
+}*/
 
 .contact-info{
     display: block;
@@ -416,7 +445,7 @@ font-weight: 600;
 text-align: center;
 margin-bottom: 0px;
 margin-top: 80px;
-margin-left: 53px;
+
 
 }
 
@@ -461,13 +490,13 @@ hr{
 position: relative; 
 font-size: 10px;
 margin-bottom: 0;
-    right: 229px;
+    right: 10px;
 
 }
 
 .footer-bottom li a{
     position: relative;
-left: 393px;
+left: 5%;
 font-size: 10px;
 
 
@@ -522,20 +551,27 @@ margin-left: 50px;
                     <h2>XL SWEEP</h2>
                 </div>
             </div>
-            <div class="nav-links">
+            <!--<div class="nav-links">
                 <ul>
                     <li><a href="{% url 'Accounts-home' %}">Home</a></li>
                     <li><a href="{% url 'about' %}">About</a></li>
                     <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
-            </div>
+            </div>-->
+            {% if user.is_authenticated %}
             <div class="nav-btn">
-                <a class = "buton" href="{% url 'login' %}">Sign In</a>
-                <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
                 <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
                 <!--<button class="sign-in">Sign In</button>
                 <button class="sign-up">Sign Up</button>-->
             </div>
+            {% else %}
+            <div class="nav-btn">
+                <a class = "buton" href="{% url 'login' %}">Sign In</a>
+                <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
+                <!--<button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>-->
+            </div>
+            {% endif %}
         </nav>
     </header>
 
@@ -618,7 +654,7 @@ margin-left: 50px;
 
         <div class="footer-bottom">
             <ul class="term">
-                <li>Terms & Conditions |</li>
+                <li><a href="{% url 'terms' %}">Terms & Conditions |</a></li>
                 <li><a href="{% url 'privacypolicy' %}">Privacy Policy &nbsp;|</a></li>
             </ul>
             <p>XL Sweep 2022. All rights reserved.</p>

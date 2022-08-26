@@ -261,6 +261,10 @@
     order: 1;
 }
 
+body{
+    width: 100%;
+}
+
 .main2 {
     width: 790px;
     height: 96px;
@@ -418,8 +422,8 @@ svg.file {
 
 #drop-down {
     box-sizing: border-box;
-    width: 308px;
-    height: 56px;
+    width: 300px;
+    height: 33px;
     border: 1px solid #000000;
     border-radius: 8px;
     position: absolute;
@@ -441,7 +445,7 @@ svg.file {
     height: 584px;
     left: 730px;
     top: 460px;
-    opacity: 0.6;
+    
 }
 
 .below {
@@ -1118,6 +1122,9 @@ footer #xl-sweep-logo {
 .footer-top li a:first-child {
     margin-left: 10px;
 }
+.pri{
+    cursor: pointer;
+}
 
 hr {
     width: 90%;
@@ -1160,6 +1167,28 @@ hr {
 
     body {
         background-color: red;
+        width: 80%;
+        display: inline-block;
+    }
+
+    main{
+        max-width: 70%;
+        display: block;
+    }
+
+    .before{
+        display: block;
+        max-width: 300px;
+    }
+
+    .bheader{
+        display: block;
+        max-width: 300px;
+    }
+
+    .after{
+        display: block;
+        max-width: 300px;
     }
 
     .footer-top ul {

@@ -2,63 +2,83 @@
 
 <html>
 
-  <head>
-    {% load static %}
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <link rel="stylesheet" href="{% static 'css/reset.css' %}"  />  <!--<media="screen"> -->
-    <link rel="stylesheet" href="{%static 'css/sign-in.css' %}" />
-  </head>
-  
-  <body>
-    <!-- <main> -->
-      <div class="body-left">
-        <img class="logo" src="{% static 'img/XL SWEEP LOGO.svg' %}" />
-        <p class="left-text top">With the help of our user friendly tool</p>
-        <p class="left-text bottom">Compare Excel Files Online with ease</p>
-        <div class="comp">
-        <img class=".compare" src="{% static 'img/XLS FILES COMPARE.svg' %}" /></div>
-      </div>
-      </div>
-      <div class="body-right">
-        <div class="body-right-content">
-          <h2 class="form-head">Sign In</h2>
-          <p class="free-text">It's free and will always be free</p>
-          
-          <form novalidate method="post">
-            {% csrf_token %}
-            <div class="flex-form">
-            <label class="reg-text" for="email">Username</label>
-            {{ form.username }} 
-            
-            <small class="error" aria-live="polite"></small>
-            <label class="reg-text" for="password">Password</label>
-            {{ form.password }}
-          
-            <a class="reg-text fgt">Forgot your Password?</a>
-            <small class="error" aria-live="polite"></small>
-            <label class="reg-text" for="Remember me">Remember me</label>
-            {{ form.remember_me }}
-            
-            <button class="signin-btn">Sign in</button>
+    <head>
+        {% load static %}
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link
+        rel="stylesheet" href="{% static 'css/reset.css' %}"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--<media="screen"> -->
+        <link rel="stylesheet" href="{% static 'css/sign-in.css' %}"/>
+    </head>
 
-            <p class="sign-link">Don't have an account? <a href="{% url 'Accounts-register' %}">Sign up</a></p>
-          
-      </form><footer class="footer">
-          <p class="copyright">XL Sweep 2022. All rights reserved &nbsp;|</p>
-          <p>Terms &amp; Conditions &nbsp;|</p>
-          <p><a href="{% url 'privacypolicy' %}">Privacy Policy </a></p>
-        </footer>  
+    <body>
+        <!-- <main> -->
+        <div class="body-left">
+            <img class="logo" src="{% static 'img/XL SWEEP LOGO.svg' %}"/>
+            <p class="left-text top">With the help of our user friendly tool</p>
+            <p class="left-text bottom">Compare Excel Files Online with ease</p>
+            <div class="comp">
+                <img class=".compare" src="{% static 'img/XLS FILES COMPARE.svg' %}"/></div>
+        </div>
+    </body>
+</html></div><div class="body-right">
+  {% if form.errors %}
+  <div class="alert alert-danger alert-dismissible" role="alert">
+      <div id="form_errors">
+          {% for key, value in form.errors.items %}
+              <strong>{{ value }}</strong>
+          {% endfor %}
       </div>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+{% endif %}
+<div class="body-right-content">
+    <h2 class="form-head">Sign In</h2>
+    <p class="free-text">It's free and will always be free</p>
+    <button class="google-btn">
+        <img class="google-img" src="{% static 'img/Frame 192.svg' %}"/>Continue with
+                    Google
+    </button>
+    <p class="or">Or</p>
+    <form novalidate method="post">
+        {% csrf_token %}
+
+        <small class="error" aria-live="polite"></small>
+        <label class="reg-text" for="Username"><strong>Username</strong></label>
+        {{ form.username }}
+
+        <small class="error" aria-live="polite"></small>
+        <label class="reg-text" for="password"><strong>Password</strong></label>
+        {{ form.password }}
+
+        <a href="{% url 'password_reset' %}" class="reg-text fgt">Forgot your Password?</a>
         
-      </div>
-    <!-- </main> -->
+        <small class="error" aria-live="polite"></small>
+        <label class="reg-text" for="Remember me">Remember me</label>
+        {{ form.remember_me }}
 
-    <script src="{% static 'js/sign.js' %}" async defer></script>
+        <button class="signin-btn">Sign in</button>
 
-  </body>
+        <p class="sign-link">Don't have an account?
+            <a href="{% url 'Accounts-register' %}">Sign up</a>
+        </p>
 
-</html>
+    </form>
+    <footer class="footer">
+        <p class="copyright">XL Sweep 2022. All rights reserved &nbsp;|</p>
+        <p>
+            <a href="{% url 'terms' %}">Terms & Conditions |</a>
+        </p>
+        <p>
+            <a href="{% url 'privacypolicy' %}">Privacy Policy
+            </a>
+        </p>
+    </footer>
+</div></div><!-- </main> --><script src="{% static 'js/sign.js' %}" async defer></script></body></html>

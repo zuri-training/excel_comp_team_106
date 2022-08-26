@@ -72,7 +72,7 @@ def high(sheet1,sheet2,flag):
                 return sheet1
             else:
                 for item in zip(rows,cols):
-                    # adding an steric to the initial value at index
+                    # adding an asteric to the initial value at index tagging it
                     sheet1.iloc[item[0],item[1]] = '*{}'.format(sheet1.iloc[item[0],item[1]])
                 return sheet1  
         else:
@@ -108,7 +108,7 @@ def high(sheet1,sheet2,flag):
                     sheet1 = sheet1.drop(w)
                     return sheet1
 
-
+#setting for the html rendering of the styled tables
 def color(s):
     s = s.set_properties(
         **{'border': '1px black solid !important'}).set_table_attributes(
@@ -118,11 +118,13 @@ def color(s):
         }])
     return s
 
+#styling(highlighting) of the dataframes for highlight function
 def highlight_cells(val):
     pat = str(val)
     color = 'cyan' if pat[0] == '*' else 'whitesmoke'
     return 'background-color: {}'.format(color)
 
+#styling(highlighting) of the dataframes for remove function
 def remove_cells(val):
     #pat = str(val)
     color = 'cyan' if val != '' else 'whitesmoke'

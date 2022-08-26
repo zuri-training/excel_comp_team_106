@@ -43,9 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.messages',
+    'django.contrib.messages',#3rd party app
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    #local apps
     'Accounts',
     'dashboard',
 ]
@@ -160,3 +161,4 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = str(os.getenv('GOOGLE_SECRET'))
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
