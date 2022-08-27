@@ -259,6 +259,18 @@ margin-top: 50px;
 
 }
 
+.buton{
+        width: 100%;
+        font-size: small;
+        width:max-content;
+        height: fit-content;
+    }
+
+    .nav-btn{
+        display:inline-flex;
+        
+        
+    }
 
 #navbar{
 
@@ -345,55 +357,67 @@ hr{
 
 footer{
     position: relative;
-    height: 100px;
+  padding: 0px;
     width: 100%;
-    padding: 50px;
-    top: 147px;
-    min-width: fit-content;
-    min-height: fit-content;
-    
 }
 
-
-
-.container{
-    margin-top: none;
-}
-
-
-.terms{
+.footer-top{
     display: none;
 }
 
-.rights{
-    font-size: 10px;
-    display: flex;
-    margin-bottom: 0;
-    position: relative;
-    right: 1px;
-    bottom: 76px;
-  
+hr{
+    display: none;
 }
 
 
-
 .footer-logo{
+    display: none;
+}
+
+.footer-xl-sweep{
+    display: none;
+    font-size: 16px;
+}
+.footer-bottom{
+
+position: relative; 
+font-size: 10px;
+margin-bottom: 0;
+right: 10px;
+width: 100%;
+
+}
+
+.footer-bottom li a{
+    position: relative;
+   left: 5%;
+   font-size: 10px;
+
+
+
+}
+
+.term{
 
 display: none;
 
 }
 
-#xlsweep-bottom{
-    display: none;
+
+.sweep{
+
+font-size: 16px;
+line-height: 24px;
+font-weight: 800;
+
 }
 
-.footer-bottom li a{
 
-font-size: 10px;
-left: 0.3%;
-bottom: 78px;
+.logo{
+
+margin-left: 50px;
+
 }
-
 
 
 
@@ -471,39 +495,38 @@ bottom: 78px;
             <div id="xl-logo">
                 <div class="footer-logo">
                 <div class="green-logo">
-                    <img class="logo" src="{% static 'img/picss/Vector.png' %}"     class="vectorgreen" alt="">
+                    <img class="logo" src="{% static 'img/Vectorgreen.png' %}"     class="vectorgreen" alt="xl-logo">
                 </div>
                 <div class="blue-logo">
-                    <img class="logo" src="{% static 'img/picss/Vector-1.png' %}"  class="vectorblue" alt="">
+                    <img class="logo" src="{% static 'img/Vectorblue.png' %}"  class="vectorblue" alt="xl-logo">
                 </div>
             </div>
-            
             </div>
-            <div class="sweep" id="xlsweep-bottom">
+            <div class="sweep">
+                <div class="footer-xl-sweep">
                 <h2>XL SWEEP</h2>
             </div>
-        
+            </div>
         </div>
     
         <div class="footer-top">
             <ul>
-                <li><a href="{% url 'Accounts-home' %}" class="home">Home</a></li>
-                <li><a href="{% url 'about' %}" class= "about">About</a></li>
-                <li><a href="{% url 'contact' %}" class="contact">Contact</a></li>
+                <li><a href="{% url 'Accounts-home' %}" class="index">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
         <hr>
 
         <div class="footer-bottom">
-            <ul class="terms">
+            <ul class="term">
                 <li><a href="{% url 'terms' %}">Terms & Conditions </a></li>
-                <li><a href="{% url 'privacypolicy' %}">Privacy Policy </a></li>
+                <li><a href="{% url 'privacypolicy' %}">Privacy Policy</a></li>
             </ul>
-            <p class="rights">XL Sweep 2022. All rights reserved.</p>
+            <p>XL Sweep 2022. All rights reserved.</p>
         </div>
      
     </footer>
-
 
 </body>
 

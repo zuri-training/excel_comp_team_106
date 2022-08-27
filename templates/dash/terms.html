@@ -179,7 +179,7 @@
         }
 
 
-        @media screen and(max-width: 990px) {
+        @media screen and(max-width: 700px) {
 
 
             body {
@@ -296,7 +296,8 @@
 
             .logo {
 
-                margin-left: 50px;
+                display: none
+                ;
 
             }
 
@@ -333,11 +334,11 @@
                 <div class="nav-btn">
         
                     <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
-                    
+                </div>  
                 {% else %}
                 <div class="nav-btn">
-                    <a class="buton" href="{% url 'login' %}">Sign In</a>
-                    <a class="buton" href="{% url 'Accounts-register' %}">Sign Up</a>
+                    <!--<a class="buton" href="{% url 'login' %}">Sign In</a>
+                    <a class="buton" href="{% url 'Accounts-register' %}">Sign Up</a>-->
                     <!--<button class="sign-in">Sign In</button>
                                                                                                 <button class="sign-up">Sign Up</button>-->
                 </div>
@@ -710,4 +711,8 @@
         <a href="{% url 'privacypolicy' %}">Privacy Policy</a>
     </li>
 </ul>
-<p>XL Sweep 2022. All rights reserved.</p></div></footer></body></html>
+<p>XL Sweep 2022. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

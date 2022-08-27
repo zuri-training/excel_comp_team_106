@@ -299,30 +299,23 @@ h1{
     }
 
 
-    /*.nav-links{
-        display: none;
-    }*/
+    .buton{
+        width: 100%;
+        font-size: small;
+        width:max-content;
+        height: fit-content;
+    }
+
+    .nav-links{
+        display:inline-flex;
+        
+    }
 
     .nav-btn{
         display: none;
     }
 
-.footer-top{
-    display: none;
-}
 
-hr{
-    display: none;
-}
-
-
-.footer-logo{
-    display: none;
-}
-
-.footer-xl-sweep{
-    display: none;
-}
 
 
 
@@ -342,50 +335,69 @@ hr{
 
 footer{
     position: relative;
+  padding: 0px;
     width: 100%;
-    padding: 0;
-    height: 88px;
-   
-    
-}
-.footer-bottom li a{
-
-font-size: 9px;
-position: relative;
-left: 172%;
-top: 3px;
-padding-left: 0.04%;
 }
 
+.footer-top{
+    display: none;
+}
+
+hr{
+    display: none;
+}
+
+
+.footer-logo{
+    display: none;
+}
+
+.footer-xl-sweep{
+    display: none;
+    font-size: 16px;
+}
 .footer-bottom{
-    justify-content: space-between;
-    
+
+position: relative; 
+font-size: 10px;
+margin-bottom: 0;
+right: 10px;
+width: 100%;
+
 }
 
-
-
-.container{
-    margin-top: none;
-}
-
-.lefts{
-    
-    right: 30%;
-    top: 5px;
+.footer-bottom li a{
     position: relative;
-  
+left: 5%;
+font-size: 10px;
+
+
+
+}
+
+.term{
+
+display: none;
+
 }
 
 
-.rights{
-    font-size: 9px;
-    display: flex;
-    margin-bottom: 0;
-    position: relative;
-    right: 0px;
-    top: 27px;
-  
+.sweep{
+
+font-size: 16px;
+line-height: 24px;
+font-weight: 800;
+
 }
+
+
+.logo{
+
+margin-left: 50px;
+
+}
+
+
 
 }
 
@@ -633,7 +645,7 @@ padding-left: 0.04%;
 
     </main>
 
-   <footer>
+    <footer>
         <div id="xl-sweep-logo">
             <div id="xl-logo">
                 <div class="footer-logo">
@@ -653,21 +665,20 @@ padding-left: 0.04%;
         </div>
     
         <div class="footer-top">
-            <ul>           
-                <li><a href="{% url 'Accounts-home' %}" class="home">Home</a></li>
-                <li><a href="{% url 'about' %}" class= "about">About</a></li>
-                <li><a href="{% url 'contact' %}" class="contact">Contact</a></li>
+            <ul>
+                <li><a href="{% url 'Accounts-home' %}" class="index">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
         <hr>
 
         <div class="footer-bottom">
-            <ul class="lefts">
-                <li><a href="{% url 'terms' %}">&nbsp;Terms & Conditions</a></li>
-                <li><a href="{% url 'privacypolicy' %}">&nbsp;Privacy Policy </a></li>
+            <ul class="term">
+                <li><a href="{% url 'terms' %}">Terms & Conditions </a></li>
+                <li><a href="{% url 'privacypolicy' %}">Privacy Policy</a></li>
             </ul>
-
-            <p class="rights">XL Sweep 2022. All rights reserved.</p>
+            <p class="push">XL Sweep 2022. All rights reserved.</p>
         </div>
      
     </footer>
