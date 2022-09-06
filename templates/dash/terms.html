@@ -21,63 +21,71 @@
     <!-- css -->
 
     <style>
-        .buton {
-            background-color: #003DB2;
-            border: none;
-            color: white;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 15px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
+        * {
+        margin: 0px;
+        padding: 0px;
+    }
 
-        #navbar {
-            background-color: #fff;
-            font-family: 'Raleway', sans-serif;
-            display: flex;
-            justify-content: space-between;
-            padding: 2rem 3rem;
-        }
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        background-color: #fafafa;
+        color: #001847;
+        
+      
+    }
 
-        #xl-sweep-logo {
-            display: flex;
-            align-items: left;
-            justify-content: left;
-        }
 
-        #xl-logo {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            position: relative;
-        }
+    #navbar {
+        background-color: #fff;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0rem;
+    }
 
-        .green-logo {
-            position: absolute;
-            top: -15%;
-            left: -6%;
-        }
+    #xl-sweep-logo {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        padding: 2rem;
+    }
 
-        .logo {
-            height: 30px;
-            margin-right: 10px;
-        }
+    #xl-logo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+    }
 
-        .sweep {
-            font-size: 20px;
-            font-weight: 800;
-            color: #003DB1;
-            line-height: 23px;
-        }
+    .green-logo {
+        position: absolute;
+        top: -20%;
+        left: -10%;
+    }
 
-         #bide {
+    .logo {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .sweep, .trim {
+        color: #003DB1;
+        font-size: 30px;
+        line-height: 23px;
+        font-weight:normal;
+    }
+
+    #bide {
             display: flex;
             list-style-type: none;
         }
 
-         .side a {
+    .side a {
             margin-right: 20px;
             margin-left: 20px;
             text-decoration: none;
@@ -87,99 +95,149 @@
             line-height: 24px;
         }
 
-        .nav-btn button {
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: 0.1px;
-            border-radius: 5px;
-            margin-right: 15px;
-        }
+    .nav-btn button {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        border-radius: 5px;
+        margin-right: 15px;
+    }
 
-        .sign-in {
-            background-color: #fff;
-            color: #003DB1;
-            border: 1px solid #003DB1;
-        }
+    .sign-in {
+        background-color: #fff;
+        color: #003DB1;
+        border: 1px solid #003DB1;
+    }
 
-        .sign-up {
-            background-color: #003DB1;
-            color: #fff;
-            border: 1px solid #003DB1;
-        }
+    .sign-up {
+        background-color: #003DB1;
+        color: #fff;
+        border: 1px solid #003DB1;
+    }
 
-        header {
-            background-color: #ffffff;
-            box-sizing: border-box;
-            border-bottom: 1px solid #B3B3B4;
-
-
-        }
+    header {
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-bottom: 1px solid #B3B3B4;
 
 
-        footer {
-            background-color: #aac2f1;
-            padding: 50px;
-            min-width: 100%;
-        }
+    }
 
-        hr {
-            width: 100%;
-            margin: auto;
-            border: 1px solid #00256B;
-        }
+    .about-heading{
 
+        font-family: 'Raleway', sans-serif; 
+        text-align: center; 
+        font-size: 30px; 
+        font-weight: 600; 
+        line-height: 68px; 
+        padding-bottom: 50px;
 
-        .footer-top {
-            font-family: 'Raleway', sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            margin-top: 50px;
-            line-height: 24px;
-            margin-bottom: 50px;
-            color: #001847;
-        }
+    }
 
+    .about-back{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600; 
+        font-size: 24px; 
+        line-height: 32px; 
+        padding-bottom: 30px; 
+    }
 
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 400;
-            font-size: 12px;
-            color: #001847;
-            line-height: 18px;
-            padding: 2rem 0.8rem;
-            width: 100%;
-        }
-        .footer-bottom ul {
-            display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-            width: 22%;
-        }
-        .footer-bottom li a {
-            text-decoration: none;
-            margin-left: 10px;
-            margin-right: 10px;
-            color: #001847;
-            font-size: 12px;
-            line-height: 18px;
-            font-weight: 400;
-            width: 100%;
-        }
-        .sweep {
-            font-size: 20px;
-            font-weight: 800;
-            color: #003DB1;
-            line-height: 23px;
-            font-family: 'Raleway', sans-serif;
+    .about-info{
 
-        }
+        font-family: 'Space Grotesk', sans-serif; 
+        font-size: 24px; 
+        font-weight: 400; 
+        line-height: 36px; 
+
+    }
 
 
-        @media screen and(max-width: 700px) {
+    footer{
+background-color: #aac2f1;
+padding: 70px  90px 50px 90px;
+    }
+
+hr{
+    width: 97%;
+    margin: auto;
+    border: 1px solid #00256B;
+}
+
+
+    .container{
+        min-height: 100%;
+        margin-top: 88px;
+        padding: 90px;
+    }
+
+
+    .main{
+        
+        padding-bottom: 100px;
+    }
+
+
+    .footer-top{
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 50px;
+        line-height: 24px;
+        margin-bottom: 90px;
+        color: #001847;
+    }
+
+
+    .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    font-size: 12px;
+    color: #001847;
+    line-height: 18px;
+    padding: 2rem 0.8rem;
+}
+.footer-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.footer-bottom li a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #001847;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.sweep {
+    font-size: 20px;
+    font-weight: 800;
+    color: #003DB1;
+    line-height: 23px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.buton {
+        background-color: #003DB2;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+        @media all and (max-width: 700px) {
 
 
             body {
@@ -189,24 +247,18 @@
                 align-items: center;
             }
 
+            header{
+                width:100%
+            }
+
             #navbar {
 
                 width: 100%;
 
             }
 
-            .side{
-                display: none;
-            }
+            
 
-
-            header {
-
-                width: 100%;
-                height: 24px;
-                border-bottom: 1px solid #B3B3B4;
-
-            }
 
             .main {
 
@@ -215,21 +267,18 @@
                 margin-right: 15%;
             }
 
+            
 
-            .nav-links {
-                display: none;
+            
+
+            header{
+                width: 100%;
             }
-
-            .nav-btn {
-
-                display: none;
-            }
-
 
             footer {
                 position: relative;
                 padding: 0;
-                width: 428px;
+                width: 100%;
             }
 
             .footer-top {
@@ -240,27 +289,12 @@
                 display: none;
             }
 
-            #bide{
-               display: none;
-             }
 
-            hr{
-             display: none;
-            }
-
-
-             .footer-logo{
-              display: none;
-             }
-
-            .footer-logo {
+            footer #xl-sweep-logo{
                 display: none;
-            }
+            }   
 
-            .footer-xl-sweep {
-                display: none;
-                font-size: 16px;
-            }
+           
             .footer-bottom {
 
                 position: relative;
@@ -278,11 +312,7 @@
 
             }
 
-            .term {
-
-                display: none;
-
-            }
+           
 
 
             .sweep {
@@ -294,15 +324,73 @@
             }
 
 
-            .logo {
-
-                display: none
-                ;
-
-            }
+            
 
 
         }
+
+        @media all and (max-width: 500px){
+
+            .buton{
+        width: 100%;
+        font-size: small;
+        width:max-content;
+        height: fit-content;
+        padding: 3px;
+        
+    }
+
+    .nav-btn{
+        display:inline-flex;
+        position: relative;   
+        margin-left:62% ;
+        margin-top: -2%;
+    }
+
+    #xl-sweep-logo{
+        position: absolute;
+        margin-top: 2%;
+        margin-right: 30%;
+         padding-left: 10%;
+    }
+
+    .green-logo{
+        top: -21%;
+        left: -32%;
+    }
+
+    .blue-logo{
+        position: relative;
+        top: 3%;
+        left: -17%;
+        
+    }
+
+    .top-heading{
+        font-size:190%;
+    }
+
+    .sweep, .trim{
+        font-size: 25px;
+        position: relative;
+        right: 8%;
+        padding-left: 0px;
+        
+    }
+
+    header{
+        height: 20%;
+        width: 100%;
+    }
+
+    footer{
+        width: 100%; 
+    }
+
+    }
+
+
+       
     </style>
 
     <body>
@@ -320,7 +408,7 @@
                         </div>
                     </div>
                     <div class="sweep">
-                        <h2 >XL SWEEP</h2>
+                        <h2 class="trim">XL SWEEP</h2>
                     </div>
                 </div>
                 {% if user.is_authenticated %}
@@ -337,8 +425,8 @@
                 </div>  
                 {% else %}
                 <div class="nav-btn">
-                    <!--<a class="buton" href="{% url 'login' %}">Sign In</a>
-                    <a class="buton" href="{% url 'Accounts-register' %}">Sign Up</a>-->
+                    <a class="buton" href="{% url 'login' %}">Sign In</a>
+                    <a class="buton" href="{% url 'Accounts-register' %}">Sign Up</a>
                     <!--<button class="sign-in">Sign In</button>
                                                                                                 <button class="sign-up">Sign Up</button>-->
                 </div>

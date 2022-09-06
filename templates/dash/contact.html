@@ -34,7 +34,7 @@
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
-        min-width: 100%;
+        width: 100%;
         height: 100vh;
         max-height: 100vh;
         background-color: #fafafa;
@@ -170,7 +170,7 @@ min-width: 100%;
     }
 
 hr{
-    width: 100%;
+    width: 95%;
     margin: auto;
     border: 1px solid #00256B;
 }
@@ -190,29 +190,36 @@ hr{
     .footer-bottom {
     display: flex;
     justify-content: space-between;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk';
     font-weight: 400;
     font-size: 12px;
     color: #001847;
     line-height: 18px;
     padding: 2rem 0.8rem;
-    width: 100%;
 }
+
+.rights{
+
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+}
+
 .footer-bottom ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    width: 22%;
 }
 .footer-bottom li a {
-    text-decoration: none;
+   
     margin-left: 10px;
     margin-right: 10px;
     color: #001847;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
-    width: 100%;
 }
 .sweep {
     font-size: 20px;
@@ -223,6 +230,27 @@ hr{
     
 }
 
+h1{
+
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 30px; 
+    font-weight: 600; 
+    line-height: 64px; 
+    font-size: 48px;
+
+}
+
+
+.paragraph{
+
+    font-family: 'Space Grotesk', sans-serif; 
+    font-weight: 400; 
+    font-size: 24px; 
+    line-height: 36px;  
+    padding: 80px;
+
+}
 
     .container{
         min-height: 100%;
@@ -350,6 +378,8 @@ display: block;
        margin: 0;
        padding: 0;
        align-items: center;
+       width: 100%;
+       height: 100vh;
     }
 
     #navbar{
@@ -375,7 +405,10 @@ flex-direction: row;
 margin-right: 60px;
 margin-top: 40px;
 width: 428px;
+
 }
+
+
 
 
 .buton{
@@ -383,10 +416,11 @@ width: 428px;
         font-size: small;
         width:max-content;
         height: fit-content;
-    }
-
+        padding: 2px;
+}
     .nav-btn{
         display:inline-flex;
+
         
         
     }
@@ -422,9 +456,9 @@ width: 428px;
     margin-left: 31px;
 }
 
-/*.phone-img{
+.phone-img{
     margin-left: 81px;
-}/*/
+}
 
 .computer{
 
@@ -434,9 +468,9 @@ margin-left: 31px;
 
 }
 
-/*.comp-img{
+.comp-img{
     margin-left: 81px;
-}*/
+}
 
 .chat{
 
@@ -446,11 +480,11 @@ margin-left: 31px;
 }
 
 
-/*.chat-img{
+.chat-img{
 
 margin-left: 81px;
 
-}/*/
+}
 
 .contact-heading{
 
@@ -483,23 +517,7 @@ footer{
     width: 428px;
 }
 
-.footer-top{
-    display: none;
-}
 
-hr{
-    display: none;
-}
-
-
-.footer-logo{
-    display: none;
-}
-
-.footer-xl-sweep{
-    display: none;
-    font-size: 16px;
-}
 .footer-bottom{
 
 position: relative; 
@@ -518,11 +536,6 @@ font-size: 10px;
 
 }
 
-.term{
-
-display: none;
-
-}
 
 
 .sweep{
@@ -545,9 +558,169 @@ margin-left: 50px;
 
 }
 
+@media screen and (max-width: 700px){
+
+    .footer-top{
+    display: none;
+}
+
+hr{
+    display: none;
+}
+
+
+.footer-logo{
+    display: none;
+}
+
+.footer-xl-sweep{
+    display: none;
+    font-size: 16px;
+}
 
 
 
+.term{
+
+display: none;
+
+}
+}
+
+@media screen and (max-width: 500px){
+    header{
+    width: 100%; 
+}
+
+footer{
+    width: 100%;
+}
+
+
+
+.green-logo{
+    top: -13%;
+    left: -52%;
+}
+
+.blue-logo{
+    position: relative;
+    top: 3%;
+    left: -42%;
+    
+}
+
+.sweep, .trim{
+    font-size: 25px;
+    position: relative;
+    right: 18%;
+    padding-left: 0px;
+    
+}
+
+
+
+}
+
+
+
+@media screen and (max-width: 450px){
+    header{
+    width: 100%; 
+    height: 18%;
+}
+
+footer{
+    width: 100%;
+}
+
+.nav-btn{
+        display:inline-flex;
+        position: relative;   
+        margin-left:67% ;
+        margin-top: -8%;
+    }
+
+    #xl-sweep-logo{
+        position: absolute;
+        margin-top: 4%;
+        margin-right: 0%;
+         padding-left: 0px;
+         width: 70%;
+    }
+
+
+.green-logo{
+    top: -13%;
+    left: -52%;
+}
+
+.blue-logo{
+    position: relative;
+    top: 3%;
+    left: -42%;
+    
+}
+
+.sweep, .trim{
+    font-size: 25px;
+    position: relative;
+    right: 18%;
+    padding-left: 4%;
+    
+}
+
+
+}
+
+
+@media screen and (max-width: 325px){
+
+    .phone{
+    width: 185px;
+    margin-left: 20px;
+}
+
+.phone-img{
+    margin-left: 61px;
+}
+
+.computer{
+
+width: 185px;
+margin-left: 20px;
+
+
+}
+
+.comp-img{
+    margin-left: 61px;
+}
+
+.chat{
+
+width: 185px;
+margin-left: 20px;
+
+}
+
+
+.chat-img{
+
+margin-left: 61px;
+
+}
+
+/*    header{
+    width: 325px; 
+    height: 18%;
+}
+
+footer{
+    width: 325px;
+}*/
+
+}
 
 </style>
 
@@ -566,7 +739,7 @@ margin-left: 50px;
                     </div>
                 </div>
                 <div class="sweep">
-                    <h2>XL SWEEP</h2>
+                    <h2 class="trim">XL SWEEP</h2>
                 </div>
             </div>
             <!--<div class="nav-links">

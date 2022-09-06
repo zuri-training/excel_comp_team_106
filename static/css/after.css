@@ -44,9 +44,8 @@
     padding: 0px;
     gap: 60px;
     position: absolute;
-    width: 365px;
     height: 24px;
-    right: -2%;
+    right: 1%;
     top: 28px;
     list-style: none;
 }
@@ -286,7 +285,7 @@ body{
     position: absolute;
     width: 590px;
     height: 584px;
-    left: 120px;
+    left: 100px;
     top: 460px;
 }
 
@@ -757,7 +756,7 @@ button span {
     position: absolute;
     height: 947px;
     left: -2px;
-    width: 1440px;
+    width: 1340px;
     top: 1660px;
     background: #EBF2FF;
     border-radius: 100px 0px;
@@ -911,7 +910,7 @@ button span {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    width: 70%;
+    width: 75%;
     color: #001847;
     flex: none;
     order: 1;
@@ -957,7 +956,7 @@ button span {
     align-items: center;
     padding: 0px;
     gap: 32px;
-    width: 1000px;
+    width: 586px;
     height: 93px;
     flex: none;
     order: 0;
@@ -1001,7 +1000,7 @@ button span {
     align-items: center;
     padding: 0px;
     gap: 32px;
-    width: 1000px;
+    width: 586px;
     height: 93px;
     flex: none;
     order: 0;
@@ -1078,14 +1077,12 @@ button span {
 }
 
 footer {
-    position: absolute;
-    bottom: -551%;
+    margin-top: 2620px;
     width: 100%;
     background-color: #AAC2F2;
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     padding: 2rem 1rem;
 }
 
@@ -1140,7 +1137,7 @@ hr {
     font-size: 12px;
     color: #001847;
     line-height: 18px;
-    padding: 2rem 0.8rem;
+
 }
 
 .footer-bottom ul {
@@ -1159,19 +1156,165 @@ hr {
 
 .footer-bottom p {
     position: relative;
-    left: -3.7%;
-    margin-left: -570px;
+
+   
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width:1300px){
+    body{
+        width: 1350px;
+    }
+
+    .nav-btn{
+        left: 1320px;
+    }
+    
+/*@media screen and (max-width:900px) {
 
     body {
         background-color: red;
         width: 80%;
-        display: inline-block;
+        display:grid;
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g';
+    }
+    
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;
+        position: static;
+        width: 811px;
+        height: 296px;
+        left: 315px;
+        top: 188px;
+        grid-area: a;
+    }
+    
+    .before {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+        position: static;
+        width: 590px;
+        height: 584px;
+        left: 120px;
+        top: 460px;
+        grid-area: b;
+    }
+    
+    .after {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+        position: static;
+        width: 590px;
+        height: 584px;
+        left: 730px;
+        top: 460px;
+        grid-area: c;
+        
+    }
+    
+    .below {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: static;
+        width: 1200px;
+        height: 115px;
+        left: 120px;
+        top: 1092px;
+        grid-area: d;
+    }
+    
+    .radiobel {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: static;
+        width: 1200px;
+        height: 120px;
+        left: 120px;
+        top: 1250px;
+        grid-area: e;
+    }
+    
+    .pri{
+        grid-area: f;
+        position: static;
+    }
+    
+    .fileinfo {
+        position: static;;
+        height: 947px;
+        left: -2px;
+        width: 1440px;
+        top: 1660px;
+        background: #EBF2FF;
+        border-radius: 100px 0px;
+        width: fit-content;
+    }
+    
+    .rightHow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+        position: static;
+        width: 300px;
+        height: 120px;
+        left: 319px;
+        top: 80px;
+    }
+    
+    .fileimg {
+        position: static;
+        left: 7.92%;
+        right: 69.14%;
+        top: 35.48%;
+        bottom: 20.91%;
+        width: 100px;
+    }
+    
+    
+    .how {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+        height: 559px;
+        left: 619px;
+        margin-top: 200%;
+        width:300px;
+        position: static;
+    }
+    
+    .uptext{
+        position: static;
     }
 
-    main{
+    /*main{
         max-width: 70%;
         display: block;
     }
@@ -1189,13 +1332,13 @@ hr {
     .after{
         display: block;
         max-width: 300px;
-    }
+    }*/
 
-    .footer-top ul {
+    /*.footer-top ul {
         margin-left: -10px;
     }
 
     #xl-sweep-logo {
         margin-left: -25px;
     }
-}
+}*/
