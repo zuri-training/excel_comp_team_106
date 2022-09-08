@@ -15,8 +15,21 @@
                <div class="logo">
                   <img src="{% static 'img/unauthimg/xl-sweeplogo.png' %}" alt="XL-sweep logo">
                </div>
+
+               
+
           {% if user.is_authenticated %}
-                <div class="nav-links" id="navi">
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="{% url 'Accounts-home' %}">Home</a>
+                <a href="about">About</a>                       
+                <a href="contact">Contact</a>
+                <a href="logout/">Logout</a>
+            </div>
+          </div>
+          <!--<div class="nav-links" id="navi">
                     <ul>
                         <li><a href="{% url 'Accounts-home' %}">Home</a></li>
                         <li><a href="about">About</a></li>                       
@@ -24,14 +37,23 @@
                     </ul>
                 </div>
                 <div>
-                    <!--<a class = "buton" href="profile/" class="nav-item nav-link">Profile</a>-->
+                    <a class = "buton" href="profile/" class="nav-item nav-link">Profile</a>
                     <a class = "buton" href="logout/" class="nav-item nav-link">Logout</a>
                     
-                    <!--<button class="login">Sign In</button>
-                    <button class="{% url 'Accounts-register' %}">Sign Up</button>-->
-                </div>
+                </div>-->
          {% else %}
-                  <div class="nav-links" id="navi">
+
+         <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="{% url 'Accounts-home' %}">Home</a>
+                <a href="about">About</a>                       
+                <a href="contact">Contact</a>
+                <a href="{% url 'login' %}">Sign In</a>
+                <a href="{% url 'Accounts-register' %}">Sign Up</a>
+            </div>
+          </div>
+                  <!-- <div class="nav-links" id="navi">
                     <ul>
                         <li><a href="{% url 'Accounts-home' %}">Home</a></li>
                         <li><a href="about">About</a></li>                       
@@ -41,9 +63,7 @@
                   <div>
                       <a class = "buton" href="{% url 'login' %}">Sign In</a>
                       <a class = "buton" href="{% url 'Accounts-register' %}">Sign Up</a>
-                      <!--<button class="login">Sign In</button>
-                      <button class="{% url 'Accounts-register' %}">Sign Up</button>-->
-                 </div>
+                 </div>-->
           {% endif %}
         </nav>
     </header>
@@ -126,7 +146,7 @@
         <div class="third">
             <h5>How it works</h5>
             <div class="third1">
-                <table>
+                <table >
                     <tr>
                         <td class="left"><img src="{% static 'img/unauthimg/upload.png' %}" alt=""></td>
                         <td><p class="heading">Upload</p>
@@ -157,7 +177,7 @@
                         </td>
                     </tr>
                 </table>
-                <img class="monitor" src="{% static 'img/unauthimg/monitor revamp 1.png' %}" alt="">
+                <img class="monitor" id="moni" src="{% static 'img/unauthimg/monitor revamp 1.png' %}" alt="">
             </div>
         </div>
 
@@ -265,7 +285,7 @@
                     <ul>
                         <li><a href="{% url 'Accounts-home' %}">Home</a></li>
                         <li><a href="about">About</a></li>                       
-                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                        <li class="side"><a href="{% url 'contact' %}" id="side">Contact</a></li>
                     </ul>
             </div>
 
