@@ -1,13 +1,53 @@
 {% extends "users/base.html" %}
 {% block title %} Register Page {% endblock title%}
 {% block content %}
+{% load static %}
+    <style>
+        .google-btn {
+  /* border-style: none;
+  border-radius: 0.3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 50px;
+  padding: 0;
+  width: 200px; */
+  border: 2px solid #c9c5ca;
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* line-height: 50px;
+  padding: 0;
+  width: 200px; */
+  
+
+   display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center; 
+  padding: 16px 45px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  width: 21rem;
+  margin: auto;
+  background: #ffffff;
+  cursor: pointer;
+}
+.google-img {
+  margin-right: 10px;
+  padding: 0;
+}
+    </style>
     <div class="form-content my-3 p-3">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="card shadow-lg border-0 rounded-lg mt-0 mb-5">
+
                         <div class="card-header justify-content-center">
-                            <a href="{% url 'social:begin' 'google-oauth2' %}"><button type="submit" class="col-md-12 btn btn-dark mb-2">Continue with Google</button></a><br>
+                            <button type="submit" class="google-btn" ><a href="{% url 'social:begin' 'google-oauth2' %}">
+                                <img class="google-img" src="{% static 'img/Frame 192.svg' %}"/>Continue with
+                                            Google</a>
+                            </button>
+                            <br>
                             <center><h6 class="or-center">OR</h6></center>
                             <h3 class="font-weight-light my-4 text-center">Register Here</h3>
                         </div>
