@@ -1,7 +1,7 @@
 {% extends "users/base.html" %}
 {% block title %} Register Page {% endblock title%}
 {% block content %}
-{% load static %}
+{% load static %},
     <style>
         .google-btn {
   /* border-style: none;
@@ -23,18 +23,35 @@
   flex-direction: row; 
   justify-content: center;
   align-items: center; 
-  padding: 16px 45px;
+  padding: 4% 4%;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  width: 21rem;
+  width: 80%;
   margin: auto;
   background: #ffffff;
   cursor: pointer;
+  font-size: 100%;
 }
 .google-img {
-  margin-right: 10px;
+  margin-left: -10%;
+  margin-right: 4%;
   padding: 0;
 }
+
+@media all and (max-width: 700px){
+    .google-btn {
+        width: fit-content;
+        font-size: 80%;
+    }
+
+    .google-img {
+        margin-left: -10%;
+        margin-right: 4%;
+        padding-left: 4%;
+    }
+
+}
+  
     </style>
     <div class="form-content my-3 p-3">
         <div class="container">
